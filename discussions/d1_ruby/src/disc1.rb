@@ -16,3 +16,15 @@ end
 
 def population()
     countries = {} 
+    countries["USA"] = 319 
+    countries["Italy"] = 60
+
+    # insert code block here
+end
+
+def splitString(s)
+    # insert code here
+end
+
+# call splitString here (param: "welcome,to,ruby,discussion") with code block
+
