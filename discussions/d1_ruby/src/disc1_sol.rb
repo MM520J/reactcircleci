@@ -7,4 +7,5 @@ def sum()
 end
 
 def multiply()
-    a 
+    a = [1,2,3,4,5]
+    a.collect! { |x| x*2
