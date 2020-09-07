@@ -13,4 +13,6 @@ def multiply()
     puts a.join(',')
 end
 
-def popula
+def population()
+    countries = {} 
+    countries["USA"] = 3
