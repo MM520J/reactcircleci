@@ -24,3 +24,5 @@ def population()
 end
 
 def splitString(s)
+    for word in s.split(',')
+   
