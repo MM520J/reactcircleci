@@ -19,4 +19,8 @@ def population()
     countries["Italy"] = 60
 
     countries.each { |k,v| 
-        puts "population of #{k} is #{v} mi
+        puts "population of #{k} is #{v} million"
+    }
+end
+
+def splitString(s)
