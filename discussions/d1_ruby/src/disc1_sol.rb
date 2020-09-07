@@ -30,4 +30,4 @@ def splitString(s)
 end
 
 
-distan
+distance = Proc.new {|x_1, y_1, x_2, y_2| put
