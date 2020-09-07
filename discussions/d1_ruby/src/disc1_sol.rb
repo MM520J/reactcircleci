@@ -19,4 +19,4 @@ def population()
     countries["Italy"] = 60
 
     countries.each { |k,v| 
-        put
+        puts "population of #{k} is #{v} mi
