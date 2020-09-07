@@ -8,4 +8,9 @@ end
 
 def multiply()
     a = [1,2,3,4,5]
-    a.collect! { |x| x*2
+    a.collect! { |x| x*2 }
+
+    puts a.join(',')
+end
+
+def popula
