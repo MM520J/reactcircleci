@@ -15,4 +15,5 @@ end
 
 def population()
     countries = {} 
-    countries["USA"] = 3
+    countries["USA"] = 319 
+    countries["Italy"] = 60
