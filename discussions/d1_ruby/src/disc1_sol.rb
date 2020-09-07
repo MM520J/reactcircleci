@@ -25,4 +25,9 @@ end
 
 def splitString(s)
     for word in s.split(',')
-   
+        yield word
+    end
+end
+
+
+distan
