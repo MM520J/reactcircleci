@@ -17,3 +17,6 @@ def population()
     countries = {} 
     countries["USA"] = 319 
     countries["Italy"] = 60
+
+    countries.each { |k,v| 
+        put
