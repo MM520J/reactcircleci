@@ -30,4 +30,9 @@ def splitString(s)
 end
 
 
-distance = Proc.new {|x_1, y_1, x_2, y_2| puts Math.sqrt((x_2 - x_1)**2 + (y_2 -
+distance = Proc.new {|x_1, y_1, x_2, y_2| puts Math.sqrt((x_2 - x_1)**2 + (y_2 - y_1)**2) }
+
+
+sum()
+multiply()
+popula
