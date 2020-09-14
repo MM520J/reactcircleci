@@ -36,4 +36,5 @@ distance = Proc.new {|x_1, y_1, x_2, y_2| puts Math.sqrt((x_2 - x_1)**2 + (y_2 -
 sum()
 multiply()
 population()
-splitString("welcome,to,rub
+splitString("welcome,to,ruby,discussion") { |x| puts x }
+distance
