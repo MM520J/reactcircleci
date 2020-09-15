@@ -3,4 +3,5 @@ class Rectangle
 
     def initialize(length, width)
         @length = length
-        @wi
+        @width = width
+        @@area[length * width] +=
