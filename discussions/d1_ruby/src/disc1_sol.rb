@@ -37,4 +37,5 @@ sum()
 multiply()
 population()
 splitString("welcome,to,ruby,discussion") { |x| puts x }
-distance
+distance.call(0, 0, 3, 4)
+
