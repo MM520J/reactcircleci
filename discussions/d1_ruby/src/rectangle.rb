@@ -7,4 +7,7 @@ class Rectangle
     
     end
 
-    def self.ge
+    def self.getNumRectangles(n)
+
+    end
+end
