@@ -3,4 +3,8 @@ class Rectangle
     
     end
 
-  
+    def getArea()
+    
+    end
+
+    def self.ge
