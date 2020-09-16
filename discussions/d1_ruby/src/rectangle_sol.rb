@@ -12,4 +12,6 @@ class Rectangle
     end
 
     def self.getNumRectangles(n)
-        count = 
+        count = 0
+        for k, v in @@area
+  
