@@ -11,4 +11,5 @@ class Rectangle
         return @length * @width
     end
 
-    def self.ge
+    def self.getNumRectangles(n)
+        count = 
