@@ -8,4 +8,7 @@ class Rectangle
     end
 
     def getArea
-        
+        return @length * @width
+    end
+
+    def self.ge
