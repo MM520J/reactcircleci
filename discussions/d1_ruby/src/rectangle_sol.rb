@@ -15,4 +15,7 @@ class Rectangle
         count = 0
         for k, v in @@area
             if k <= n
-                count 
+                count += v
+            end
+        end
+   
