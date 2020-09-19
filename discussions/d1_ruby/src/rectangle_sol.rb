@@ -18,4 +18,6 @@ class Rectangle
                 count += v
             end
         end
-   
+        count
+    end
+end
