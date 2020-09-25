@@ -19,3 +19,43 @@ Some primitive built-in data types are `int`, `float`, `char`, `string`, `bool`,
 We know the primitive data types but we will learn more about the others later down in the discussion. Arithmetic operators in Ocaml are not overloaded. So, you can use `+`, `-`, `*`, `/` on two ints but not on floats. For floats, they are `+.`, `-.`, `*.`, `/.`. **Notice the period**.
 
 Expressions are something that evaluates to some value. Example: `1 + 2`, `2 < 3`, `"hello"`.
+
+## Part 2: Let bindings and Let expressions
+
+Almost everything in Ocaml is an expression , say `e`. An expression will evaluate to some value of type, say `t`.
+
+Examples:  
+- `1: int`
+- `true: bool`
+- `'e': char`
+
+The `let` syntax is the main way to bind a name to a value. Simply: 
+
+```ocaml
+let name = value;; (* syntax *)
+let num1 = 5;; (* type: int *)
+let num2 = 6;; (* type: int *)
+let num3 = num1 + num2;; (* type: int *)
+```
+
+We use `let` to create expressions as well. Remember that expressions evaluate to some values. So, the variables initialized in the let expressions are limited to the expression in terms of scope.
+
+Examples:
+
+```ocaml
+let x = 8 in x;;  (* will evaluate to 8 *)
+let x = 10 in let y = 15 in x + y;; (* nested let expressions *)
+let x = 5 in let y = 7 in if x > y then "bigger" else "smaller";; (* expression can be another expression *)
+```
+
+## Part 3: Functions and the `rec` keyword
+
+Functions, conventionally, are multiline reusable code that might or might not depend on other variables (arguments). To denote the notion of functions in Ocaml, we can treat the functions as expressions i.e. something that can evaluate to a value. Technically, a function processes the input and generates an output. Putting multiple expressions together can work the same magic. So, we use `let` bindings to bind expression(s) and parameters to some name to make functions.
+
+Example:
+
+```ocaml
+let my_function a = a;; (* type 'a -> 'a *)
+```
+analogous to (java)
+```java
