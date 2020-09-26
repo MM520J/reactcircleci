@@ -59,3 +59,35 @@ let my_function a = a;; (* type 'a -> 'a *)
 ```
 analogous to (java)
 ```java
+<T> T my_function(T a) {
+    return a;
+}
+```
+
+Raising the complexity of the functions:
+```ocaml
+let my_func param1 param2 = param1 + param2;; (* type: int -> int -> int *)
+let to_arr a b = [a; b];;                     (* type: 'a -> 'a -> 'a list *)  
+```
+analogous to (java)
+```java
+int my_func(int param1, int param2) {
+    return param1 + param2;
+}
+
+<T> T[] to_arr(T a, T b) {
+    return {a, b};
+}
+```
+
+```ocaml
+let check_empty_string str_param = 
+    if str_param = "" then true else false;; (* type: string -> boolean *)
+
+let check_a_string str_param = 
+    if str_param = "a" then true else "invalid string";; (* will fail to compile *)
+```
+
+Notice how each branch in a function (maybe if-else or pattern matching) should return the same data type.
+
+The general pattern for determining the type of any function is:
