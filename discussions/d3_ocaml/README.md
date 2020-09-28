@@ -91,3 +91,45 @@ let check_a_string str_param =
 Notice how each branch in a function (maybe if-else or pattern matching) should return the same data type.
 
 The general pattern for determining the type of any function is:
+
+`first_param_type -> second_param_type -> ... -> last_param_type -> return_type`.
+
+Let's practice writing functions with specified types!
+
+#### `'a -> 'a -> bool`
+
+#### `('a -> 'b) -> 'a -> 'b -> bool`
+
+#### `int -> (int -> float) -> string` (Challenge)
+<br/>
+
+### Recursive functions
+
+The use of `rec` keyword makes a function recursive. You do not need to make recursive calls, but if you want to, you need the `rec` keyword.
+
+```ocaml
+let rec factorial num = 
+    if num = 1 then 1 else num * (factorial (num - 1)) (* int -> int *)
+```
+
+## Part 4: Lists
+
+Lists are analogous to arrays to other languages with a difference that the Ocaml lists cannot be indexed. So, recursion is the prime way of iterating over a list and pattern-matching to access an element. The lists are homogenous in nature and the elements are separated by `;`. 
+
+Examples: 
+```ocaml
+let my_list = [1;2;3];;
+let my_second_list param_a param_b = [param_a; param_b] in my_second_list 1 2;;
+let my_third_list = "first" :: ["second"; "third"];;
+```
+
+You preppend to a list using a cons `::` operator.
+
+Let's practice with lists!
+
+#### `int -> int -> float list`
+
+#### `('a -> 'b) -> 'a -> 'b list -> 'b list`
+<br/>
+
+## Part 5: Pattern matching
