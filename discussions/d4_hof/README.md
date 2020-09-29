@@ -108,3 +108,7 @@ This recursively defines a `tree` to either be a
 Let's generalize `map` and `fold` to work on this `tree`. Try to implement it on your own! Can you describe the what the type of these functions should be?
 
 To practice with this, let's write a few functions using map and fold define on trees:
+
+- Write a function to return a `tree` with each value incremented by one:
+
+- Write a function to return the sum of all the elements of a `tree`:
