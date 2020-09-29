@@ -33,3 +33,13 @@ let rec fold_tree f b t =
       let res_r = fold_tree f b r in
       f res_l v res_r
 
+
+let add1 tree = map_tree (fun x -> x + 1) tree
+
+let sum tree = fold_tree (fun x l r -> x + l + r) 0 tree
+
+let test_tree = Node(Node(Leaf, 4, Leaf), 5, Node(Leaf, 2, Leaf)) ;;
+    
+sum test_tree;;
+
+let test2 = add1 test_tree;;
