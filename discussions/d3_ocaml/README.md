@@ -133,3 +133,37 @@ Let's practice with lists!
 <br/>
 
 ## Part 5: Pattern matching
+
+Pattern matching is like regular expressions for values. You match the values against a desired pattern to validate that value, extract subvalues out of it, or even manipulate the subvalues.
+
+Syntax:
+```ocaml
+match value with
+pattern1 -> code if it match pattern1
+| pattern2 -> code if it match pattern2
+.
+.
+| _ -> default code;;
+```
+
+- List pattern matching
+
+```ocaml
+let my_list [ 1; 2; 3; 4; 5];;
+
+let rec add_one lst = match lst with
+[] -> []
+| h :: t -> (h + 1) :: (add_one t)
+in add_one my_list;;
+```
+
+You can even have multiple levels of patterns.
+
+```ocaml
+let check_min_len lst = match lst with
+[] -> "zero"
+| a :: t -> "at least one"
+| a :: b :: t -> "at least two"
+| a :: b :: c :: t -> "at least three"
+| _ -> "at least four";;
+```
