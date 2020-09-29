@@ -71,3 +71,40 @@ let rec fold f a lst =
     []->a
     |h::t->fold f (f a h) t
 ;;
+
+let rec fold_right f lst a =
+    match lst with
+    []->a
+    |h::t-> f h (fold_right f t a)
+;;
+```
+
+A key difference between these two is the order of association. Consider the example of adding all elements of the list `[1;2;3;4]`.  `fold_left` will associate from the left as follows:
+
+`(((0 + 1) + 2) + 3) + 4`
+
+On the other hand, `fold_right` will associate from the right as follows:
+
+`1 + (2 + (3 + (4 + 0)))`
+
+Notice how we assume that our accumulator starts with 0.
+
+## Part 3: Tree Type
+
+To get more practice with pattern matching, custom data types and map/fold, let's build a `tree` data type!
+
+First, we will define the `tree` type:
+
+```ocaml
+type 'a tree = 
+  | Leaf 
+  | Node of 'a tree * 'a * 'a tree
+```
+
+This recursively defines a `tree` to either be a
+- `Leaf` 
+- `Node` with a left sub-`tree`, a value, and a right sub-`tree`
+
+Let's generalize `map` and `fold` to work on this `tree`. Try to implement it on your own! Can you describe the what the type of these functions should be?
+
+To practice with this, let's write a few functions using map and fold define on trees:
