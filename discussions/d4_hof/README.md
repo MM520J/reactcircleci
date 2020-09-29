@@ -44,3 +44,30 @@ let rec map f xs =
 ## Part 2: Fold
 
 Suppose you want to compute the sum of each element in a list. We can write a function that does this:
+
+```ocaml
+let rec sum xs =
+  match xs with
+      [] -> 0
+    | h::t -> h+(sum t)
+;;
+```
+
+What if you want to compute the size of a list?
+
+```ocaml
+let rec size xs =
+  match xs with
+      [] -> 0
+    | h::t -> 1+(size t)
+;;
+```
+
+In each case, we are keeping track of an *accumulator* and adding onto it based on some property of the current element. We can generalize this to any function `f` using `fold` (also known as `fold_left`) and `fold_right`:
+
+```ocaml
+let rec fold f a lst =
+    match lst with
+    []->a
+    |h::t->fold f (f a h) t
+;;
