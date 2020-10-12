@@ -2,4 +2,5 @@
 
 ## Reminders
 1. Quiz 2 is **today** March 3rd
-2. Project 2b 
+2. Project 2b due March 12th 11:59PM
+3. Exam 
