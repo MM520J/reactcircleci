@@ -6,3 +6,9 @@
 3. Exam 1 is coming up on March 14th
 
 Today, we will be briefly discussing how to evaluate a subset of the `condition`s from Project 2b.
+
+```ml
+type condition = 
+  | True
+  | False
+  | And o
