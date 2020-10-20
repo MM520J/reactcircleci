@@ -11,4 +11,5 @@ Today, we will be briefly discussing how to evaluate a subset of the `condition`
 type condition = 
   | True
   | False
-  | And o
+  | And of condition * condition
+  | Or of cond
