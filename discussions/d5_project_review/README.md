@@ -12,4 +12,6 @@ type condition =
   | True
   | False
   | And of condition * condition
-  | Or of cond
+  | Or of condition * condition
+  | Not of condition
+ 
