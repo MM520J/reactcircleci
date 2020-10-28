@@ -16,4 +16,4 @@ type condition =
   | Not of condition
   | If of condition * condition * condition
 ```
-Notice how this definition is recursive. The
+Notice how this definition is recursive. The “base cases” are True and False, and
