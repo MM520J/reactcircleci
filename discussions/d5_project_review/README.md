@@ -18,4 +18,5 @@ type condition =
 ```
 Notice how this definition is recursive. The “base cases” are True and False, and the other conditions have conditions within them. Some examples of conditions are:
 - `Or(Not(True), False)`
-- `And(Or
+- `And(Or(True, Not(False))), True)`
+- `If(True, Or
