@@ -20,4 +20,6 @@ Notice how this definition is recursive. The “base cases” are True and False
 - `Or(Not(True), False)`
 - `And(Or(True, Not(False))), True)`
 - `If(True, Or(True, False), And(False,Not(True)))`
-- `If(And(True, True), Or(Not(False
+- `If(And(True, True), Or(Not(False), True), False)`
+
+To interpret these
