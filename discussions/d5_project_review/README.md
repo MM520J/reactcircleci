@@ -22,4 +22,4 @@ Notice how this definition is recursive. The “base cases” are True and False
 - `If(True, Or(True, False), And(False,Not(True)))`
 - `If(And(True, True), Or(Not(False), True), False)`
 
-To interpret these conditions, we can think of “unwrapping” t
+To interpret these conditions, we can think of “unwrapping” the condition based on what type of 
