@@ -25,4 +25,5 @@ Notice how this definition is recursive. The “base cases” are True and False
 To interpret these conditions, we can think of “unwrapping” the condition based on what type of condition it is. We can use pattern matching to implement this. 
 
 ```ml
-let rec is_true condition
+let rec is_true condition = match condition with
+  | True -> tr
