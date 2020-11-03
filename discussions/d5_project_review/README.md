@@ -26,4 +26,6 @@ To interpret these conditions, we can think of “unwrapping” the condition ba
 
 ```ml
 let rec is_true condition = match condition with
-  | True -> tr
+  | True -> true
+  | False -> false
+  | And(x,y) -> 
