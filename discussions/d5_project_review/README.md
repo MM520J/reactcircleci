@@ -28,4 +28,5 @@ To interpret these conditions, we can think of “unwrapping” the condition ba
 let rec is_true condition = match condition with
   | True -> true
   | False -> false
-  | And(x,y) -> 
+  | And(x,y) -> (is_true x) && (is_true y)
+  | 
