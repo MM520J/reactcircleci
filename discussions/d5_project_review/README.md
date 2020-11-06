@@ -31,4 +31,5 @@ let rec is_true condition = match condition with
   | And(x,y) -> (is_true x) && (is_true y)
   | Or(x,y) -> (is_true x) || (is_true y)
   | Not(x) -> not (is_true x)
-  | If(x,y,z) -> if (is_true x) then (is_true y) else
+  | If(x,y,z) -> if (is_true x) then (is_true y) else (is_true z)
+```
