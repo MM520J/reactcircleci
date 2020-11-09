@@ -115,3 +115,21 @@ h::t -> 4::5::6::[];;
 map add3 []
 match [] with
 [] -> []
+|h::t -> add3 h ....
+
+map add3 [3]
+match [3] with
+[]-> []
+|h::t -> 6::(map add3 [])
+h:3
+t:[]
+
+map add3 [2;3]
+match [2;3] with
+[] -> []
+|h::t -> (5::map add3 [3])
+
+l: [2;3]
+f:add3
+h:2
+t:[3]
