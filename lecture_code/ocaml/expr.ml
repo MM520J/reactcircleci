@@ -71,3 +71,47 @@ let area l w = l * w
 let area = (fun l w -> l * w);;
 
 let area = fun l -> (fun w -> l * w)
+
+def genadd(x)
+  Proc.new{|y| y + x}
+end
+
+add3 = gendadd(3)
+add4 = gendadd(4)
+
+add3.call(4)
+add4.call(4)
+
+let area = fun l -> (fun w -> l * w)
+
+def area
+  Proc.new{|l| Proc.new{|w| -> l * w}}
+end
+
+area.call(3).call(4)
+
+def appplied(p,x)
+  p.call(x)
+end
+
+
+let applied f x = f x;;
+
+
+let rec map f l = match l with
+[] -> []
+|h::t -> (f h)::(map f t);;
+
+('a -> 'b) -> 'a list -> 'b list
+
+let add3 x = x + 3
+
+map add3 [1;2;3]
+match [1;2;3] with
+[] -> []
+h::t -> 4::5::6::[];;
+[4;5;6]
+
+map add3 []
+match [] with
+[] -> []
