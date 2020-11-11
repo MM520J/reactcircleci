@@ -1,4 +1,7 @@
 (expr1:int + expr2:int):int
 5:int
 6:int
-(5:int + 6:int):i
+(5:int + 6:int):int
+
+((5:int + 6:int):int + 7:int):int
+(5:in
