@@ -7,4 +7,6 @@
 (5:int + (6:int:int + 7:int)):int
 
 (expr1:int + expr2:int):int
-(expr1:int - expr2:int):
+(expr1:int - expr2:int):int
+(expr1:int * expr2:int):int
+(expr1:int / e
