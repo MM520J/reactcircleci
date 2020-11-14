@@ -9,4 +9,7 @@
 (expr1:int + expr2:int):int
 (expr1:int - expr2:int):int
 (expr1:int * expr2:int):int
-(expr1:int / e
+(expr1:int / expr2:int):int
+
+true:bool
+(true ||
