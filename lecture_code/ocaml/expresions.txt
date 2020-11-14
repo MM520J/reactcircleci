@@ -15,4 +15,6 @@ true:bool
 (true || false):bool
 false:bool
 
-(if expr1:bool 
+(if expr1:bool then expr2:t else expr3:t):t
+
+if true t
