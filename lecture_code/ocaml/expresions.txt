@@ -12,4 +12,7 @@
 (expr1:int / expr2:int):int
 
 true:bool
-(true ||
+(true || false):bool
+false:bool
+
+(if expr1:bool 
