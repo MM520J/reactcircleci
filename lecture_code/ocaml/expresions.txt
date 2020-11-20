@@ -18,4 +18,4 @@ false:bool
 (if expr1:bool then expr2:t else expr3:t):t
 
 if true then false else true;;
-(if true:bool 
+(if true:bool then false:bool else true:bool):bool;;
