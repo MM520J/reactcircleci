@@ -21,4 +21,7 @@ if true then false else true;;
 (if true:bool then false:bool else true:bool):bool;;
 expr1: true:bool
 expr2: false:bool
-expr3:
+expr3: true:bool
+
+if true then 3 else 4;;
+(if true:b
