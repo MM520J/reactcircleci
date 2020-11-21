@@ -19,3 +19,6 @@ false:bool
 
 if true then false else true;;
 (if true:bool then false:bool else true:bool):bool;;
+expr1: true:bool
+expr2: false:bool
+expr3:
