@@ -24,4 +24,5 @@ expr2: false:bool
 expr3: true:bool
 
 if true then 3 else 4;;
-(if true:b
+(if true:bool then 3:int else 4:int):int;;
+expr1: tr
