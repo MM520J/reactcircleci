@@ -25,4 +25,8 @@ expr3: true:bool
 
 if true then 3 else 4;;
 (if true:bool then 3:int else 4:int):int;;
-expr1: tr
+expr1: true:bool
+expr2: 3:int
+expr3: 4:int
+
+(if (
