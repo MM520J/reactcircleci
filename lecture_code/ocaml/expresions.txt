@@ -29,4 +29,5 @@ expr1: true:bool
 expr2: 3:int
 expr3: 4:int
 
-(if (
+(if (true||false) then 3+4 else 5;;
+exp
