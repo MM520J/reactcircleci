@@ -30,4 +30,6 @@ expr2: 3:int
 expr3: 4:int
 
 (if (true||false) then 3+4 else 5;;
-exp
+expr1: (true||false):bool
+expr2: 3+4:int
+expr3: 5:int
