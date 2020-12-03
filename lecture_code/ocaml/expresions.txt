@@ -35,4 +35,5 @@ expr2: 3+4:int
 expr3: 5:int
 
 if false then 5 else 6;;
-expr1: (if 
+expr1: (if true then false else true): bool
+  -> 
