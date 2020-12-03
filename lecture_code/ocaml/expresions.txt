@@ -43,4 +43,11 @@ expr1: (if true then false else true): bool
 expr2: 5:int
 expr3: 6:int
 
-These are the sa
+These are the same
+---------------
+def x
+  3
+end
+
+x + 3
+----
