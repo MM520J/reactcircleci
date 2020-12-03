@@ -38,4 +38,5 @@ if false then 5 else 6;;
 expr1: (if true then false else true): bool
   -> e1 -> true:bool
   -> e2 -> false:bool
-  
+  -> e3 -> true:bool
+  => false:bool
