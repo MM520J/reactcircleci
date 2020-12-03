@@ -55,4 +55,4 @@ y = 3
 y + 3
 --------------
 
-(let name
+(let name arg1:t1 arg2:t2...argx:tx = expr:t):t1->t->..->tx-
