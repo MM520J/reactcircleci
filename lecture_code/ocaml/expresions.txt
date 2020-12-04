@@ -58,4 +58,6 @@ y + 3
 (let name arg1:t1 arg2:t2...argx:tx = expr:t):t1->t->..->tx->t
 (let name = expr:t):t
 
-(let add3 x:i
+(let add3 x:int = x:int + 3): int->int
+
+l
