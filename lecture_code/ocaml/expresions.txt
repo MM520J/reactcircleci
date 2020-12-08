@@ -66,4 +66,5 @@ arg2: b: 'a
 arg3: c: 'b
 arg4: d: 'b
 return: bool
- 'a 
+ 'a -> 'a -> 'b -> 'b -> bool
+
