@@ -60,4 +60,7 @@ y + 3
 
 (let add3 x:int = x:int + 3): int->int
 
-let f a b c d = if true then a > b else 
+let f a b c d = if true then a > b else c > d;;
+arg1: a: 'a
+arg2: b: 'a
+arg3
