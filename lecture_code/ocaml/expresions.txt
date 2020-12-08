@@ -63,4 +63,7 @@ y + 3
 let f a b c d = if true then a > b else c > d;;
 arg1: a: 'a
 arg2: b: 'a
-arg3
+arg3: c: 'b
+arg4: d: 'b
+return: bool
+ 'a 
