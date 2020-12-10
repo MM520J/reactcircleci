@@ -39,3 +39,38 @@ a:'a list @ b:'a list
 
 
 let rec foldl f a l = match l with
+[] -> a
+|h::t -> foldl f (f a h) t;;
+
+let sum a b = a + b in 
+foldl sum 0 [1;2;3]
+
+match [1;2;3] with
+[] -> 0
+|h::t -> foldl sum 1 [2;3];;
+
+foldl sum 1 [2;3]
+match [2;3] with
+[] -> 1
+|h::t -> foldl sum 3 [3]
+
+foldl sum 3 [3]
+match [3] with
+[] -> 3
+|h::t -> fold sum 6 []
+
+fold sum 6 []
+match [] with
+[] -> 6
+
+let rec foldr f l a -= match l with
+[] -> a
+|h::t -> f h (foldr f t a)
+
+foldr -> 3 + 2 + 1 -> 6
+1 + 2 + 3 =  3 + 2 + 1
+1 - 2 -3 != 3 - 2 - 1
+
+foldl (fun (a,b) x -> (a+h,b+1)) (0,0) [1;2;3]
+
+join
