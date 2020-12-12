@@ -103,3 +103,26 @@ foldl
 'a list -> 'a list list
 
 let powerset lst = fold f [] lst
+
+f: -> 'a -> 'a list list
+
+let build acc ele = match acc with
+[] -> [[ele]]
+|h::t -> let res = map (fun x -> ele::x) acc
+          in [ele]::(res @ acc);;
+
+let powerset lst = []::lst::(fold build [] lst);;
+
+powerset [1;2;3];;
+        
+build 1 [[2];[3]] -> [[1];[2];[3];[1;2];[1;3]]
+res = map ... -> [[1;2];[1;3]]
+temp = [1]::res -> [[1];[1;2];[2;3]]
+temp @ [[2];[3]] -> [[1];[1;2];[2;3] [2];[3]]
+
+fold is a the higher level idea of taking a value and a list and updating the total based off the items in the list
+
+map takes in a list and a function. For each item in the list, call the function on it and get a result r back. Then add r to a list of other results
+
+map (fun x -> x + 3) [1;2;3]
+-> [4;5;6]
