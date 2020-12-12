@@ -74,3 +74,32 @@ foldr -> 3 + 2 + 1 -> 6
 foldl (fun (a,b) x -> (a+h,b+1)) (0,0) [1;2;3]
 
 join
+["a","b","c"].join -> "abc"
+
+let joinf lst = foldl (fun a h -> a ^ h) "" lst
+
+let rec join lst = match lst with 
+[] -> ""
+|h::t -> h ^ (join t);;
+
+let rec join lst = 
+let rec join2 lst a = match lst with
+[] -> a
+|h::t -> join2 t (h^a) in join2 lst;;
+
+countif takes in a predicate and alist and counts how many items in the list make the predicate true
+
+let countif pred lst = 
+foldl 
+  (fun a x -> if pred x then a+ 1 else a) 
+  0 
+  lst
+
+ powerset of list return a list of all possible subsets
+
+[1;2;3]
+[[];[1];[2];[3];[1;2];[1;3];[2;3];[1;2;3]]
+
+'a list -> 'a list list
+
+let powerset lst = fold f [] lst
