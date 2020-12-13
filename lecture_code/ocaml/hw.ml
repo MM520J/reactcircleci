@@ -1,1 +1,1 @@
-print_string "Hell
+print_string "Hello World!\n"
