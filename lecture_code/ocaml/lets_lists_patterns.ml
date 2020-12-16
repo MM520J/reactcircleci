@@ -9,4 +9,4 @@ t2:int
 
 1. e1 is evaluated to a value, v1
 2. bind v1 to the varaible var, v1:var
-3
+3. evaluate e2 knowing {v1:var} to a 
