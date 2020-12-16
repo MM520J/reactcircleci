@@ -13,3 +13,10 @@ t2:int
 4. return v2
 
 let x = 3 in 4
+3=>3
+3:x
+4 knowing 3:x => 4
+4
+
+
+(let var = 
