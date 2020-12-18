@@ -29,4 +29,8 @@ let x = 3 in 4
 let x = 3 in let x = 4 in x + x
 let x = 3 in z
 let x = 3 in 8
-z = l
+z = let x = 4 in x + x => 8
+
+
+e1:3=>3
+t1:i
