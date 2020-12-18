@@ -26,4 +26,5 @@ let x = 3 in 4
 3. evaluate e2 knowing {v1:var} to a value v2
 4. return v2
 
-le
+let x = 3 in let x = 4 in x + x
+l
