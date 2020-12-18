@@ -19,4 +19,6 @@ let x = 3 in 4
 4
 
 
-(let var = 
+(let var = e1:t1 in e2:t2):t2
+
+1. e1 is evalu
