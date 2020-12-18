@@ -21,4 +21,5 @@ let x = 3 in 4
 
 (let var = e1:t1 in e2:t2):t2
 
-1. e1 is evalu
+1. e1 is evaluated to a value, v1
+2. bind v1 to the vara
