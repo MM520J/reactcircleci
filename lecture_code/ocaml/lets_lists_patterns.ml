@@ -27,4 +27,6 @@ let x = 3 in 4
 4. return v2
 
 let x = 3 in let x = 4 in x + x
-l
+let x = 3 in z
+let x = 3 in 8
+z = l
