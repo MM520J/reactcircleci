@@ -23,4 +23,7 @@ let x = 3 in 4
 
 1. e1 is evaluated to a value, v1
 2. bind v1 to the varaible var, v1:var
-3. evaluate e2 knowing 
+3. evaluate e2 knowing {v1:var} to a value v2
+4. return v2
+
+le
