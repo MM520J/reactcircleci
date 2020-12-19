@@ -33,4 +33,6 @@ z = let x = 4 in x + x => 8
 
 
 e1:3=>3
-t1:i
+t1:int {x:3}
+e2: let x = 4 in x + x
+t2
