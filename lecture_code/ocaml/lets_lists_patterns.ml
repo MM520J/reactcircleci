@@ -39,4 +39,6 @@ t2:int
 
 subexpr-e2 {3:x}
   let x = 4 in x + x
- 
+  e1: 4+.4
+  t1: int {4:x}
+  e2: x + x => 4 +
