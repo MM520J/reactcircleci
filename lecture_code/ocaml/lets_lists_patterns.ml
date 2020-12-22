@@ -35,4 +35,8 @@ z = let x = 4 in x + x => 8
 e1:3=>3
 t1:int {x:3}
 e2: let x = 4 in x + x
-t2
+t2:int
+
+subexpr-e2 {3:x}
+  let x = 4 in x + x
+ 
