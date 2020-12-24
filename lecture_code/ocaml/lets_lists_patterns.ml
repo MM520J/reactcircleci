@@ -41,4 +41,8 @@ subexpr-e2 {3:x}
   let x = 4 in x + x
   e1: 4+.4
   t1: int {4:x}
-  e2: x + x => 4 +
+  e2: x + x => 4 + 4 => 8
+  t2: int
+:int
+
+let x = le
