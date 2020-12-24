@@ -45,4 +45,5 @@ subexpr-e2 {3:x}
   t2: int
 :int
 
-let x = le
+let x = let x = 3 in x + 1 in x + 2;;
+e1: let x =
