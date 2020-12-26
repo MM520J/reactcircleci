@@ -50,4 +50,8 @@ e1: let x = 3 in x + 1 => 4
 e2: x + 2 {4:x} => 6
 
 let x = 4 in let x = x + 4 in x;;
-let x = 4 in let y = x + 4 in y;
+let x = 4 in let y = x + 4 in y;;
+
+def area r
+  pi = 3.14
+  return p
