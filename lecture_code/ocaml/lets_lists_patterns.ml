@@ -47,4 +47,6 @@ subexpr-e2 {3:x}
 
 let x = let x = 3 in x + 1 in x + 2;;
 e1: let x = 3 in x + 1 => 4
-e2: x + 2 {4
+e2: x + 2 {4:x} => 6
+
+let x = 4 in let x = x + 4 in x
