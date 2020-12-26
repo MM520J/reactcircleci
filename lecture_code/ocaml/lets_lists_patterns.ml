@@ -54,4 +54,7 @@ let x = 4 in let y = x + 4 in y;;
 
 def area r
   pi = 3.14
-  return p
+  return pi * r * r
+end
+
+let area r = let pi = 3.14 in 
