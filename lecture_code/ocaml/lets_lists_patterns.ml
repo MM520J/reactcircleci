@@ -57,4 +57,6 @@ def area r
   return pi * r * r
 end
 
-let area r = let pi = 3.14 in 
+let area r = let pi = 3.14 in pi *. r *. r;;
+
+([e1:t;e2:t;...;e
