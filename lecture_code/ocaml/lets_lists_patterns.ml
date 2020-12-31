@@ -74,4 +74,10 @@ list :-
   []
   h::t
   h: the head or first item
-  t: the rest of t
+  t: the rest of the list
+
+
+
+0-> 1 -> 2 -> 3 -> 4
+
+lst
