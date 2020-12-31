@@ -73,4 +73,5 @@ x::a
 list :-
   []
   h::t
-  h: the hea
+  h: the head or first item
+  t: the rest of t
