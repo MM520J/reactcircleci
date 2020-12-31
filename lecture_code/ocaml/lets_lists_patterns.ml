@@ -80,4 +80,9 @@ list :-
 
 0-> 1 -> 2 -> 3 -> 4
 
-lst
+lst = 1mem
+
+let lst2 = 0:: lst
+
+(match e1:t with
+p1
