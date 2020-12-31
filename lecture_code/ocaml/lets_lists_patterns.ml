@@ -85,4 +85,7 @@ lst = 1mem
 let lst2 = 0:: lst
 
 (match e1:t with
-p1
+p1 -> e2:t2
+|p2 -> e3:t2
+...
+|px -> ex:t2
