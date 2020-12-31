@@ -61,4 +61,11 @@ let area r = let pi = 3.14 in pi *. r *. r;;
 
 ([e1:t;e2:t;...;ex:t]):t list
 
-(e1:t :: e2:t list):t
+(e1:t :: e2:t list):t list
+
+a.push(x)
+x::a
+
+1::[2]
+
+1::(
