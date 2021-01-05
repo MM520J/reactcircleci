@@ -90,4 +90,6 @@ p1 -> e2:t2
 ...
 |px -> ex:t2):t2
 
-match e1 with p1 -> e2 | p2 -> e3
+match e1 with p1 -> e2 | p2 -> e3 | px -> px;;
+
+[1] -> 1::[], h:1
