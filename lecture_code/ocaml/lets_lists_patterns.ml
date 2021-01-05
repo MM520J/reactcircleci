@@ -88,4 +88,6 @@ let lst2 = 0:: lst
 p1 -> e2:t2
 |p2 -> e3:t2
 ...
-|px -> ex:t2
+|px -> ex:t2):t2
+
+match e1 with p1 -> e2 | p2 -> e3
