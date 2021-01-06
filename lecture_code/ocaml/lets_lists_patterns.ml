@@ -113,3 +113,7 @@ let _ = print_int
 in match x with
 [] -> 0
 |h::2::t -> h
+) 
+
+let length lst = match lst with
+[
