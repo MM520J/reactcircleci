@@ -97,4 +97,9 @@ match e1 with p1 -> e2 | p2 -> e3 | px -> px;;
 
 (match e1:t with
 p1 -> e2:t2
-|p1 
+|p1 -> e3:t2
+...
+|px -> ex:t2):t2
+
+switch(3)
+ 
