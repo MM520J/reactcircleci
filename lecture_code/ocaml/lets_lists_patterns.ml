@@ -102,4 +102,6 @@ p1 -> e2:t2
 |px -> ex:t2):t2
 
 switch(3)
- 
+  case(4): return 7
+  case(5): return 6
+  case
