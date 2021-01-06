@@ -109,4 +109,7 @@ switch(3)
 let x = 5 in 
 
 let _ = print_int 
-(let x = [1;2;3] => 1::(2::3[
+(let x = [1;2;3] => 1::(2::3[])
+in match x with
+[] -> 0
+|h::2::t -> h
