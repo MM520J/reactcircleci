@@ -108,4 +108,5 @@ switch(3)
 
 let x = 5 in 
 
-let _ 
+let _ = print_int 
+(let x = [1;2;3] => 1::(2::3[
