@@ -104,4 +104,8 @@ p1 -> e2:t2
 switch(3)
   case(4): return 7
   case(5): return 6
-  case
+  case("hello"): return 8
+
+let x = 5 in 
+
+let _ 
