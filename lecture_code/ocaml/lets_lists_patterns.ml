@@ -116,4 +116,8 @@ in match x with
 ) 
 
 let length lst = match lst with
-[
+[] -> 0
+|h::t -> 1 + length t;;
+
+
+let 
