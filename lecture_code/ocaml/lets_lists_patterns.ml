@@ -120,4 +120,6 @@ let length lst = match lst with
 |h::t -> 1 + length t;;
 
 
-let 
+let rec evens lst = match lst with
+[] -> []
+|h
