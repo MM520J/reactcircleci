@@ -122,4 +122,4 @@ let length lst = match lst with
 
 let rec evens lst = match lst with
 [] -> []
-|h
+|h::t -> if h mod 2 = 0 then h::(evens t) else evens
