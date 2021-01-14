@@ -1,3 +1,6 @@
 def mycb(x)
   puts "in mycb"
-  i
+  if block_given?
+    yield
+  else
+    
