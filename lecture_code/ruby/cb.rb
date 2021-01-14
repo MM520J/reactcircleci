@@ -3,4 +3,7 @@ def mycb(x)
   if block_given?
     yield
   else
-    
+    puts "no block"
+  end
+  puts x
+  puts "
