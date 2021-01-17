@@ -6,4 +6,10 @@ def mycb(x)
     puts "no block"
   end
   puts x
-  puts "
+  puts "back in mycb"
+end
+
+
+def puts_hello
+  puts "hello"
+e
