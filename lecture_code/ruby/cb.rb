@@ -12,4 +12,11 @@ end
 
 def puts_hello
   puts "hello"
-e
+end
+
+def add
+  yield 4
+end
+
+def mycb
+ 
