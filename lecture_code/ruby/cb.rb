@@ -19,4 +19,10 @@ def add
 end
 
 def mycb
- 
+  a = yield 
+  puts a 
+end
+
+mycb
+
+
