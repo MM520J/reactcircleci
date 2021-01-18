@@ -24,3 +24,10 @@ puts 3.4 + 1.2
 
 if true then
   class Float
+    def +(x)
+      "not today"
+    end
+  end
+end
+
+puts 3.4 + 1.2
