@@ -14,3 +14,7 @@ end
 
 def my_s4
   return "my String"
+end
+
+def my_s5
+  s = "my String"
