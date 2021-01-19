@@ -8,4 +8,9 @@ def my_s2
 end
 
 def my_s3
-  s = "my String
+  s = "my String"
+  s
+end
+
+def my_s4
+  return "my String"
