@@ -1,2 +1,2 @@
 f = File.open("file2.txt")
-reg
+regex = /^([A-Z][a-z0-9]+): ([0-9]{3})-([
