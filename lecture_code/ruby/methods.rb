@@ -18,3 +18,8 @@ end
 
 def my_s5
   s = "my String"
+end
+
+puts my_s1
+puts my_s2
+puts 
