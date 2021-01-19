@@ -7,4 +7,5 @@ def my_s2
   return s
 end
 
-d
+def my_s3
+  s = "my String
