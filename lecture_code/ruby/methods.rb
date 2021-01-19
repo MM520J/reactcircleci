@@ -22,4 +22,6 @@ end
 
 puts my_s1
 puts my_s2
-puts 
+puts my_s3
+puts my_s4
+puts my_s5
