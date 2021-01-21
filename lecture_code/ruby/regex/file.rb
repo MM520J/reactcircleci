@@ -4,4 +4,6 @@ phonebook = {}
 line = f.gets
 while line
   if line =~ regex
-    p
+    phonebook[$1] = $2+$3+$4 
+  end
+  l
