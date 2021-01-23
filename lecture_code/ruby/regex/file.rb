@@ -12,4 +12,4 @@ f.close
 puts phonebook
 puts phonebook.values
 puts phonebook.keys
-puts phonebook["Name2
+puts phonebook["Name2"]
