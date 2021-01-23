@@ -6,4 +6,7 @@ while line
   if line =~ regex
     phonebook[$1] = $2+$3+$4 
   end
-  l
+  line = f.gets
+end
+f.close
+puts phon
