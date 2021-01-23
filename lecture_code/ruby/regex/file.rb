@@ -11,4 +11,5 @@ end
 f.close
 puts phonebook
 puts phonebook.values
-puts
+puts phonebook.keys
+puts phonebook["Name2
