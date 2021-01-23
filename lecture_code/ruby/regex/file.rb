@@ -9,4 +9,6 @@ while line
   line = f.gets
 end
 f.close
-puts phon
+puts phonebook
+puts phonebook.values
+puts
