@@ -56,4 +56,12 @@ aa
 3-7
 hello
 hellohello
-hellohellohel
+hellohellohello
+hellhellhellooohello
+3--7
+bb
+Ab
+A0
+B2
+bA
+AA
