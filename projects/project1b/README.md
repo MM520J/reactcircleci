@@ -130,3 +130,39 @@ Here is a grammar structure of a valid English sentence:
 determiner adjective noun
 the red truck
 a small snail
+their cute dog
+```
+However, as you may have noticed in part 1, other languages have different grammar structures. Here is an example
+for Spanish sentences:
+```
+determiner noun adjective
+el camion rojo
+un pequeño caracol
+su lindo perro
+```
+
+The next few methods rely on the grammatical structures of languages or the grammatical structures that are passed in.
+
+ - `generateSentence(language, struct)`: `struct` is either a grammar, or an array of POS. Given this structure, create a sentence in the given language that 
+ matches that structure. If you cannot, return `nil`.
+ When multiple POS exist, you can choose any word that has that POS. 
+ Using the sample files shown in the **File Inputs** section, the following examples are provided:
+    + example: `generateSentence("French", "English")` -> `nil` (*Note: There are no French nouns*)
+    + example: `generateSentence("German", ["NOU", "DET", "ADJ"])` -> `"der blau lkw"`
+    + example: `generateSentence("Swedish", ["ADJ"])` -> `"bla"`
+    + example: `generateSentence("English", "English")` -> `"the blue truck"`
+
+ - `checkGrammar(sentence, language)`: `language` is a language name. Check if the sentence matches that language's grammatical structure and return true or false. You may assume that `sentence` is in `language`'s language.
+   + example: `checkGrammar("el camion azul", "Spanish")` -> true
+   + example: `checkGrammar("le bleu", "Swedish")` -> false
+
+ - `changeGrammar(sentence, struct1, struct2)`: `struct1` is either a language name, or an array of POS. `struct2` is either a language name or a array of POS.
+ Given a sentence and its structure (`struct1`), change the sentence to match `struct2`. 
+This should work independently of that actual gramatical structure of `sentence` and if the words in `sentence` are actual words or not. You may assume `sentence.length == struct1.length == struct2.length`.
+When multiple POS exist, you can swap the order however you want as long as your resuling sentence has all the same words in the input.
+If you cannot change the structure, then return `nil`.
+   + example: `changeGrammar("el azul camion", "English", "Spanish")`-> `"el camion azul"`
+   + example: `changeGrammar("the blue truck", "English", "English")` -> `"the blue truck"`
+   + example: `changeGrammar("le bleu", "Swedish", ["ADJ", "DET"])` -> `"bleu le"`
+
+#### **Part 3**
