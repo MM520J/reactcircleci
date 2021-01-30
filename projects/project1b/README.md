@@ -44,3 +44,46 @@ First, a file that has a list of words, their part of speech, and their counterp
 The file would have the structure below:
 ```
 word, POS, <L1>:<word1>, <L2>:<word2>, ...
+```
+* Each starting `word` will be considered part of the `English` language. 
+    * `word` will be at least one character long
+    * valid characters in `word` are lowercase alphabetic characters and the hyphen character ("-")
+* `POS` is the part of speech
+    * a valid `POS` will be any capitalized 3 letter code: ADJ, NOU, ADV, etc.
+* `LX` is a language name (not including `English`)
+    * A language `LX` starts with a capital letter, and is followed by any number of lowercase alphanumeric characters.
+* `wordX` represents `word`'s equivalent in language `LX`
+    * `wordX` will be a string consisting of lowercase alphabetic characters and the hyphen character ("-")
+    * `wordX` will be at least one character long
+
+For example:
+```
+blue, ADJ, French:bleu, German:blau, Spanish:azul, Swedish:bla
+truck, NOU, Spanish:camion, German:lkw
+the, DET, German:der, Spanish:el, French:le
+```
+
+Not all words will have translations to all other languages. 
+It is also important to note, that some words have multiple parts of speech.
+(eg. "Bank" is both a noun and a verb). If this is the case, they will be on seperate lines
+```
+bank, NOU, Spanish:banco
+bank, VER, Spanish:ladear
+```
+
+If a line doesn't match all the above specifications, ignore the entire line.
+
+#### Grammar File
+Second, a file that describes the grammar structure of a language:
+
+The file will have the following format
+```
+Lang: POSX1, POSX2, POSX3, ...
+```
+
+We will be using similar formatting as the Language File with a slight modification.
+* `Lang` is a language name 
+    * A language `Lang` starts with a capital letter, and is followed by any number of lowercase alphanumeric characters.
+* `POSXY` denotes a single or repeated `POS`
+    * a valid `POSXY` will be any capitalized 3 letter code: ADJ, NOU, ADV, etc, with an optional modifier denoting how many times it repeats in a row.
+    * A valid modifier looks like `{#}` where `#` is any valid Natural number greater than zero.
