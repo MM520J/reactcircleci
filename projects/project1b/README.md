@@ -87,3 +87,46 @@ We will be using similar formatting as the Language File with a slight modificat
 * `POSXY` denotes a single or repeated `POS`
     * a valid `POSXY` will be any capitalized 3 letter code: ADJ, NOU, ADV, etc, with an optional modifier denoting how many times it repeats in a row.
     * A valid modifier looks like `{#}` where `#` is any valid Natural number greater than zero.
+
+For example:
+```
+Language: DET, ADJ{3}, NOU
+English: DET, ADJ, NOU
+Spanish: DET, NOU, ADJ
+Swedish: DET, NOU
+French: DET, NOU
+German: DET, ADJ, ADJ, NOU, ADJ
+```
+
+Each language will only have one grammar structure at a time.
+
+If a line doesn't match all the above specifications, ignore the entire line.
+
+### **Translator Class**
+
+You will make a `Translator` class which will hold all the words and grammars the translator will know.
+When you make a new `Translator`, an initial words and grammar file will be 
+provided.
+
+You will need to design a data structure to hold all the information needed. We _highly_ recommend that you make inner classes to store the information in a more concise way.
+
+#### **Part 1**
+
+First initialize your data structure and then complete the following methods to add any new words/grammars to your structure.
+
+ - `updateLexicon(inputfile)`: Update the words in your lexicon, by reading in 
+ the file. If you have already seen a word, update your data structure so that any additional 
+ translations are added.
+ Ignore any malformed lines that do not follow the above formatting. You can assume that the inputfile is a valid file name.
+
+ - `updateGrammar(inputfile)`: Update your grammar knowledge by reading in the 
+ file. If you have already seen a language's grammatical structure, update it 
+ with the new data. Ignore any malformed lines that do not follow the above formatting. You can assume that the inputfile is a valid file name.
+
+#### **Part 2**
+
+Here is a grammar structure of a valid English sentence:
+```text
+determiner adjective noun
+the red truck
+a small snail
