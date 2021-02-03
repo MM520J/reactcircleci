@@ -166,3 +166,25 @@ If you cannot change the structure, then return `nil`.
    + example: `changeGrammar("le bleu", "Swedish", ["ADJ", "DET"])` -> `"bleu le"`
 
 #### **Part 3**
+
+Now that we can change the structure of a sentence around, let's now change it syntacitcally. 
+
+That is
+```text
+the truck blue -> el camion azul
+```
+The last two methods deal with translating words and also changing the grammar of the sentence. 
+
+ - `changeLanguage(sentence, language1, language2)`: 
+ Given a sentence `sentence` that matched the gramatical structure of `language1`, convert the 
+ entire sentence into the target language, `language2`, keeping the same grammatical structure.
+ If any part of the sentence cannot be translated, then return `nil`. Otherwise return the translated sentence. 
+ You may assume that each word in `sentence` is in `language1`.
+    + `changeLanguage("i like cheese", "English", "French")` -> `"je aime fromage"`
+    + `changeLanguage("azul le camion", "Spanish", "German")` -> `"blau der lkw"`
+
+ - `translate(sentence, language1, language2)`: 
+ Given a sentence that matches the gramtical structure of `language1`, convert the entire sentence into the target language, `language2`, and change the grammatical structure to match `language2`. 
+ If any part of the sentence cannot be translated, then return `nil`. Otherwise return the translated sentence. 
+   + example: `translate("the blue truck", "English", "Spanish")` -> `"el camion azul"`
+   + example: `translate("el camion azul", "Spanish", "English")` -> `"the blue truck"`
