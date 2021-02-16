@@ -1,1 +1,2 @@
-blue, ADJ, French:bleu, German:blau, Sp
+blue, ADJ, French:bleu, German:blau, Spanish:azul, Swedish:Bla
+this is an invalid li
