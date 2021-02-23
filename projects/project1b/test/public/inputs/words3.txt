@@ -1,3 +1,4 @@
 blue, ADJ, French:bleu, German:blau, Spanish:azul, Swedish:Bla
 this is an invalid line
 truck, NOU, Spanish:camion, German:lkw
+the, DET, German:der, Spanish:el, French
