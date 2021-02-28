@@ -5,4 +5,5 @@ the, DET, German:der, Spanish:el, French:
 red, ADJ, French:rouge, German:rot, Spanish:rojo
 at, PRE, German:bei
 this is also invalid
-sea, NOU, German:meer, 
+sea, NOU, German:meer, French:mer
+fork, NOU, Italian:fo
