@@ -9,3 +9,58 @@ WORDS_FILE2 = "#{__dir__}/inputs/words2.txt"
 GRAMMAR_FILE2 = "#{__dir__}/inputs/grammar2.txt"
 WORDS_FILE3 = "#{__dir__}/inputs/words3.txt"
 GRAMMAR_FILE3 = "#{__dir__}/inputs/grammar3.txt"
+
+
+class PublicTests <MiniTest::Test
+    def setup
+        @@translator = Translator.new(WORDS_FILE1, GRAMMAR_FILE1)
+        @@translator2 = Translator.new(WORDS_FILE2, GRAMMAR_FILE2)
+        @translator3 = Translator.new(WORDS_FILE3, GRAMMAR_FILE3)
+    end
+
+    def test_update
+        assert_nil(@translator3.generateSentence("German", "German"))
+        @translator3.updateGrammar(GRAMMAR_FILE1)
+        assert(@translator3.generateSentence("German", "German"))
+        assert_nil(@translator3.generateSentence("French", "French"))
+        @translator3.updateLexicon(WORDS_FILE1)
+        assert(@translator3.generateSentence("French", "French"))
+    end
+
+    def test_generateSentence
+        assert(@@translator.generateSentence("English", "French").match?(/(blue|red) (truck|sea|fork) the/))
+        assert_equal(@@translator.generateSentence("English", ["DET", "ADJ", "NOU"]).match?(/the (blue|red) (truck|sea|fork)/), true)
+        assert_nil(@@translator.generateSentence("Italian", ["DET", "ADJ", "NOU"]))
+        assert(@@translator.generateSentence("German", "French").match?(/(blau|rot) (meer|lkw|gabel) der/))
+        assert(@@translator.generateSentence("French", ["NOU", "DET"]).match?(/mer le/))
+        assert(@@translator.generateSentence("German", ["ADJ", "DET", "NOU"]).match?(/(blau|rot) der (lkw|meer|gabel)/))
+        assert_equal(@@translator.generateSentence("Italian", ["NOU"]), "forchetta")
+    end
+
+    def test_generateSentence2
+        assert(@@translator.checkGrammar(@@translator.generateSentence("English", ["DET", "ADJ", "NOU"]), "English"))
+        assert(@@translator.checkGrammar(@@translator.generateSentence("German", ["NOU", "ADJ"]), "German"))
+        assert(@@translator.checkGrammar(@@translator.generateSentence("French", ["ADJ", "NOU", "DET"]), "French"))
+        assert(@@translator.checkGrammar(@@translator.generateSentence("Spanish", ["DET", "NOU", "DET"]), "Spanish"))
+    end
+
+    def test_checkGrammar
+        assert(@@translator.checkGrammar("el camion el", "Spanish"))
+        assert(@@translator.checkGrammar("meer rot", "German"))
+        assert_equal(@@translator.checkGrammar("the truck blue", "English"), false)
+        assert_equal(@@translator.checkGrammar("el camion azul", "Spanish"), false)
+        assert_equal(@@translator.checkGrammar("der blau LKW", "German"), false)
+        assert_equal(@@translator.checkGrammar("blue the truck", "English"), false)
+        assert(@@translator.checkGrammar("rouge mer le", "French"))
+    end
+
+    def test_changeGrammar
+        assert_equal(@@translator.changeGrammar("blue the truck", ["ADJ", "DET", "NOU"], ["DET", "ADJ", "NOU"]), "the blue truck")
+        assert_equal(@@translator.changeGrammar("der rot meer", ["DET", "ADJ", "NOU"], ["ADJ", "NOU", "DET"]), "rot meer der")
+        assert_equal(@@translator.changeGrammar("bleu mer le", "French", "English"), "le bleu mer")
+        assert_equal(@@translator.changeGrammar("rojo camion", ["ADJ", "NOU"], ["NOU", "ADJ"]), "camion rojo")
+
+        assert(@@translator.changeGrammar(@@translator.generateSentence("Spanish", ["DET", "NOU", "DET"]), "Spanish", ["DET", "DET", "NOU"]).match?(/el el camion/))
+        assert(@@translator.changeGrammar(@@translator.generateSentence("English", ["DET", "NOU", "ADJ"]), ["DET", "NOU", "ADJ"], ["ADJ", "NOU", "DET"]).match?(/(blue|red) (truck|sea|fork) the/))
+        assert(@@translator.changeGrammar(@@translator.generateSentence("French", ["DET", "NOU", "ADJ"]), ["DET", "NOU", "ADJ"], ["ADJ", "NOU", "DET"]).match?(/(bleu|rouge) mer le/))
+    end
