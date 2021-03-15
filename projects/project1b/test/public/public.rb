@@ -64,3 +64,40 @@ class PublicTests <MiniTest::Test
         assert(@@translator.changeGrammar(@@translator.generateSentence("English", ["DET", "NOU", "ADJ"]), ["DET", "NOU", "ADJ"], ["ADJ", "NOU", "DET"]).match?(/(blue|red) (truck|sea|fork) the/))
         assert(@@translator.changeGrammar(@@translator.generateSentence("French", ["DET", "NOU", "ADJ"]), ["DET", "NOU", "ADJ"], ["ADJ", "NOU", "DET"]).match?(/(bleu|rouge) mer le/))
     end
+
+    def test_changeLanguage
+        assert_equal(@@translator.changeLanguage("the blue truck", "English", "Spanish"), "el azul camion")
+        assert_equal(@@translator.changeLanguage("the blue sea", "English", "German"), "der blau meer")
+        assert_equal(@@translator.changeLanguage("el camion el", "Spanish", "German"), "der lkw der")
+        assert_equal(@@translator.changeLanguage("el camion el", "Spanish", "English"), "the truck the")
+        assert_equal(@@translator.changeLanguage("bleu mer le", "French", "German"), "blau meer der")
+        assert_equal(@@translator.changeLanguage("gabel blau", "German", "English"), "fork blue")
+        assert_equal(@@translator.changeLanguage("lkw rot", "German", "Spanish"), "camion rojo")
+    end
+
+    def test_translate
+        assert_equal(@@translator.translate("the blue sea", "English", "French"), "bleu mer le")
+        assert_equal(@@translator.translate("rouge mer le", "French", "English"), "the red sea")
+
+        assert_nil(@@translator.translate("the blue sea", "English", "Spanish"))
+        assert_nil(@@translator.translate("rojo mer le", "French", "Spanish"))
+        assert_nil(@@translator.translate("el camion el", "Spanish", "French"))
+        assert_nil(@@translator.translate("el camion el", "Spanish", "German"))
+        assert_nil(@@translator.translate("el camion el", "Spanish", "English"))
+    end
+
+    def test_checkGrammar2
+        assert(@@translator2.checkGrammar(@@translator2.generateSentence("L1", ["NOU", "AJD", "JKJ"]), "L1"))
+        assert(!@@translator2.checkGrammar(@@translator2.generateSentence("L2", ["JKJ", "NOU", "AJD"]), "L2"))
+        assert(!@@translator2.checkGrammar(@@translator2.generateSentence("L3", ["JKJ", "AJD", "NOU"]), "L3"))
+        assert(@@translator2.checkGrammar(@@translator2.generateSentence("L4", ["AJD", "NOU", "JKJ"]), "L4"))
+    end
+
+    def test_changeLanguage2
+        assert_equal(@@translator2.changeLanguage("w-onenine w-one w-six", "English", "L1"), "w-twozero w-two w-seven")
+        assert_equal(@@translator2.changeLanguage("w-onenine w-one w-six", "English", "L2"), "w-twoone w-three w-nine")
+        assert_equal(@@translator2.changeLanguage("w-twozero w-two w-oneseven", "L1", "L2"), "w-twoone w-three w-onesix")
+        assert_equal(@@translator2.changeLanguage("w-onesix w-onesix w-twoone w-three", "L2", "L1"), "w-oneseven w-oneseven w-twozero w-two")
+    end
+
+    def test_translate2
