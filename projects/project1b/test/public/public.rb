@@ -101,3 +101,11 @@ class PublicTests <MiniTest::Test
     end
 
     def test_translate2
+        assert_equal(@@translator2.translate("w-onenine w-one w-onefour", "English", "L1"), "w-twozero w-two w-oneseven")
+        assert_equal(@@translator2.translate("w-twozero w-two w-oneseven", "L1", "English"), "w-onenine w-one w-onefour")
+        res = @@translator2.translate("w-oneeight w-oneeight w-onetwo w-twoseven", "L3", "L2")
+        assert(res == "w-onesix w-onesix w-twosix w-oneone" || res == "w-onesix w-onesix w-twosix w-onethree")
+        assert_equal(@@translator2.translate("w-five w-threeone w-onefive", "L4", "L1"), "w-twonine w-two w-oneseven")
+        assert_equal(@@translator2.translate("w-twonine w-two w-oneseven", "L1", "L4"), "w-five w-threeone w-onefive")
+    end
+end
