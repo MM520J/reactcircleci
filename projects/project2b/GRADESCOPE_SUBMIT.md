@@ -7,4 +7,4 @@ to test the new process with project 2b. The new submission process is described
 
 ## Installing new command
 
-To install the new `
+To install the new `submit` command complete the foll
