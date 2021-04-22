@@ -9,4 +9,5 @@ to test the new process with project 2b. The new submission process is described
 
 To install the new `submit` command complete the following steps:
 
-  1. Update your `opam` repository by running: `
+  1. Update your `opam` repository by running: `opam update`
+  2. Install the new ver
