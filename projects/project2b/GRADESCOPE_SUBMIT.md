@@ -12,4 +12,6 @@ To install the new `submit` command complete the following steps:
   1. Update your `opam` repository by running: `opam update`
   2. Install the new version of submit by running: `opam install gradescope_submit`
   
-     *Note: This will not conflict with the `gradescope_submit` command from previous
+     *Note: This will not conflict with the `gradescope_submit` command from previous projects*
+     
+## Link Github to Gradescope
