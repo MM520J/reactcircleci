@@ -16,4 +16,4 @@ To install the new `submit` command complete the following steps:
      
 ## Link Github to Gradescope
 
-Log into your gradescope account and go to your
+Log into your gradescope account and go to your account settings. Scroll down to the `Linked Accou
