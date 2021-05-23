@@ -21,3 +21,4 @@ have your Github account linked here, click the `Link a GitHub account` button a
   
 ## Using the new submit command
 
+First make sure all your chan
