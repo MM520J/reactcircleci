@@ -21,4 +21,6 @@ have your Github account linked here, click the `Link a GitHub account` button a
   
 ## Using the new submit command
 
-First make sure all your changes are pushed to github using the `git add`, `git commit`, an
+First make sure all your changes are pushed to github using the `git add`, `git commit`, and `git push` commands.
+
+Next, to 
