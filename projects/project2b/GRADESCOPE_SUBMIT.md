@@ -23,4 +23,4 @@ have your Github account linked here, click the `Link a GitHub account` button a
 
 First make sure all your changes are pushed to github using the `git add`, `git commit`, and `git push` commands.
 
-Next, to submit your project using the new su
+Next, to submit your project using the new submit command you can run `submit` f
