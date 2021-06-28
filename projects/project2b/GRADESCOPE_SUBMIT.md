@@ -25,4 +25,5 @@ First make sure all your changes are pushed to github using the `git add`, `git 
 
 Next, to submit your project using the new submit command you can run `submit` from your project directory.
 
-The new `submit` comand will pull your code from GitHub, not your local files. If you do n
+The new `submit` comand will pull your code from GitHub, not your local files. If you do not push your changes to GitHub,
+they will 
