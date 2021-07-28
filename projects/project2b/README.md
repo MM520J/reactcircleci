@@ -6,4 +6,4 @@ Points: 40% public, 30% semipublic, 30% secret
 **This is an individual assignment. You must work on this project alone.**
 
 ## Introduction
-The goal o
+The goal of this project is to increase you
