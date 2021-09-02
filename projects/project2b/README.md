@@ -9,4 +9,4 @@ Points: 40% public, 30% semipublic, 30% secret
 The goal of this project is to increase your familiarity with programming in OCaml and give you more practice with higher order functions and user-defined types. You will write a number of small functions that will use higher order functions operating over a tree structure, and then you will implement a program that simulates a database.
 
 ### Ground Rules
-In
+In addition to your own code, you may use l
