@@ -11,4 +11,5 @@ The goal of this project is to increase your familiarity with programming in OCa
 ### Ground Rules
 In addition to your own code, you may use library functions found in the [`Stdlib` module](https://caml.inria.fr/pub/docs/manual-ocaml/libref/Stdlib.html) and the `List` module. You **may not** (under threat of a grading penalty) use any other submodules of `Stdlib` or any imperative features of Ocaml unless otherwise stated. You **may not** make any function in part 2 recursive unless the function already has the `rec` keyword.
 
-### Testing & Su
+### Testing & Submitting
+Submit by either running `gr
