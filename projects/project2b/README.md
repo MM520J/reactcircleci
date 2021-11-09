@@ -14,4 +14,6 @@ In addition to your own code, you may use library functions found in the [`Stdli
 ### Testing & Submitting
 Submit by either running `gradescope-submit` or `submit` (if you have installed the new version of gradescope submit on your computer).
 
-Instructions to use the new optional submit process can be found
+Instructions to use the new optional submit process can be found [here](./GRADESCOPE_SUBMIT.md)
+
+To 
