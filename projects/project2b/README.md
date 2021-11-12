@@ -16,4 +16,4 @@ Submit by either running `gradescope-submit` or `submit` (if you have installed 
 
 Instructions to use the new optional submit process can be found [here](./GRADESCOPE_SUBMIT.md)
 
-To 
+To test locally, run `dune runtest -f`. Besides t
