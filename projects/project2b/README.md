@@ -18,4 +18,4 @@ Instructions to use the new optional submit process can be found [here](./GRADES
 
 To test locally, run `dune runtest -f`. Besides the provided public tests, you will also find the file `student.ml` in `test/student/`, where you'll be able to add `OUnit` tests of your own. More detailed information about writing tests can be found [here](https://www.youtube.com/watch?v=C36JnAcClOQ).
 
-You can interactively test your code by running `dune utop src`, which will include your source files. (As usual, all of your commands in `utop` need to end with two semicolo
+You can interactively test your code by running `dune utop src`, which will include your source files. (As usual, all of your commands in `utop` need to end with two semicolons (`;;`), otherwise it will app
