@@ -22,4 +22,7 @@ You can interactively test your code by running `dune utop src`, which will incl
 
 ## Part 1: Database Design
 
-Create a program that stores `person`s in a database which can later be querie
+Create a program that stores `person`s in a database which can later be queried. 
+A person is defined as follows:
+
+```oc
