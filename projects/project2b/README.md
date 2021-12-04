@@ -22,4 +22,4 @@ You can interactively test your code by running `dune utop src`, which will incl
 
 ## Part 1: Database Design
 
-Cr
+Create a program that stores `pe
