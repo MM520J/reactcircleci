@@ -28,4 +28,7 @@ A person is defined as follows:
 ```ocaml
 type person = { name: string;
                 age: int;
-      
+                hobbies: string list }
+```
+
+You mu
