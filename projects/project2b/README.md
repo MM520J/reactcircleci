@@ -31,4 +31,4 @@ type person = { name: string;
                 hobbies: string list }
 ```
 
-You must come up with your own implementation for the data type for the data
+You must come up with your own implementation for the data type for the database `db`. As provided above, `person` inclu
