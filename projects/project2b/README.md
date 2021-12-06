@@ -31,4 +31,4 @@ type person = { name: string;
                 hobbies: string list }
 ```
 
-You mu
+You must come up with your own implementatio
