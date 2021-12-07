@@ -33,4 +33,4 @@ type person = { name: string;
 
 You must come up with your own implementation for the data type for the database `db`. As provided above, `person` includes `name`, `age`, and `hobbies`, which is the data we would like to add to our database.
 
-Given a piece of data like 
+Given a piece of data like `person`, you will implement the following operatio
