@@ -37,4 +37,6 @@ Given a piece of data like `person`, you will implement the following operations
 
 ### `newDatabase`
   - **Type**: `db`
-  - **Description**: cre
+  - **Description**: creates and returns an empty database
+
+### `insert per
