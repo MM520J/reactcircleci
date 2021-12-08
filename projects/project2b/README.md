@@ -35,4 +35,6 @@ You must come up with your own implementation for the data type for the database
 
 Given a piece of data like `person`, you will implement the following operations on the database:
 
-### `newDatabase
+### `newDatabase`
+  - **Type**: `db`
+  - **Description**: cre
