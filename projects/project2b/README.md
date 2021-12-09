@@ -41,3 +41,4 @@ Given a piece of data like `person`, you will implement the following operations
 
 ### `insert person database`: 
   - **Type**: `person -> db -> db`
+  - **Description**: given a person 
