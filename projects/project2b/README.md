@@ -39,4 +39,5 @@ Given a piece of data like `person`, you will implement the following operations
   - **Type**: `db`
   - **Description**: creates and returns an empty database
 
-### `insert per
+### `insert person database`: 
+  - **Type**: `person -> db -> db`
