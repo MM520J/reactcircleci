@@ -41,4 +41,4 @@ Given a piece of data like `person`, you will implement the following operations
 
 ### `insert person database`: 
   - **Type**: `person -> db -> db`
-  - **Description**: given a person and a database, insert the person into the database and return the updated database. If the person already exists in the dat
+  - **Description**: given a person and a database, insert the person into the database and return the updated database. If the person already exists in the database, there should be duplicat
