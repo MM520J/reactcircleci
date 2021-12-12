@@ -44,3 +44,4 @@ Given a piece of data like `person`, you will implement the following operations
   - **Description**: given a person and a database, insert the person into the database and return the updated database. If the person already exists in the database, there should be duplicate entries of the person after performing the insert function.
   - **Examples**:
   ```ocaml
+  let db1 = insert {name="Alice";age=23
