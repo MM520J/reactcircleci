@@ -45,4 +45,4 @@ Given a piece of data like `person`, you will implement the following operations
   - **Examples**:
   ```ocaml
   let db1 = insert {name="Alice";age=23;hobbies=["Skiing";"golfing"]} newDatabase
-  let db1 = insert {name="Alice"
+  let db1 = insert {name="Alice";age=23;hobbies=["Skiing";"golfin
