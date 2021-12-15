@@ -46,4 +46,5 @@ Given a piece of data like `person`, you will implement the following operations
   ```ocaml
   let db1 = insert {name="Alice";age=23;hobbies=["Skiing";"golfing"]} newDatabase
   let db1 = insert {name="Alice";age=23;hobbies=["Skiing";"golfing"]} db1
-  (* db1 stores a database that includes Alice twice, so querying the siz
+  (* db1 stores a database that includes Alice twice, so querying the size
+      of this database should result in 2 instanc
