@@ -52,4 +52,4 @@ Given a piece of data like `person`, you will implement the following operations
 
 ### `remove name database`: 
   - **Type**: `string -> db -> db`
-  - 
+  - **Description**: given a person
