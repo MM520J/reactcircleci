@@ -50,4 +50,5 @@ Given a piece of data like `person`, you will implement the following operations
       of this database should result in 2 instances of the Alice person *)
   ```
 
-##
+### `remove name database`: 
+  - 
