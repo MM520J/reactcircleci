@@ -55,4 +55,5 @@ Given a piece of data like `person`, you will implement the following operations
   - **Description**: given a person's name and a database, remove all persons with the same name from the database and return the updated database. If no persons exist in the database with the same name as the given person, the database should not change.
   - **Examples**:
   ```ocaml
-  let db1 
+  let db1 = remove "Alice" db1
+  (* db1 no
