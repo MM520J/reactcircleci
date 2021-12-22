@@ -57,4 +57,6 @@ Given a piece of data like `person`, you will implement the following operations
   ```ocaml
   let db1 = remove "Alice" db1
   (* db1 no longer contains Alice, db1 is now empty *)
- 
+  ```
+#### Comparator
+A comparator is a fun
