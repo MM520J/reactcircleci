@@ -59,4 +59,5 @@ Given a piece of data like `person`, you will implement the following operations
   (* db1 no longer contains Alice, db1 is now empty *)
   ```
 #### Comparator
-A comparator is a fun
+A comparator is a function that tells how to compare two people. 
+Its ty
