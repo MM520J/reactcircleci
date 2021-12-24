@@ -60,4 +60,5 @@ Given a piece of data like `person`, you will implement the following operations
   ```
 #### Comparator
 A comparator is a function that tells how to compare two people. 
-Its type is `person -> person -> int`. It follows the typical -1, 0, 1 convention. 
+Its type is `person -> person -> int`. It follows the typical -1, 0, 1 convention. Below is an example comparator:
+ 
