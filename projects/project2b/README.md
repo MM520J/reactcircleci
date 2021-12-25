@@ -63,4 +63,5 @@ A comparator is a function that tells how to compare two people.
 Its type is `person -> person -> int`. It follows the typical -1, 0, 1 convention. Below is an example comparator:
   ```ocaml
   let comparator1 p1 p2 = 
-   
+    if p1.age < p2.age then -1
+    else if
