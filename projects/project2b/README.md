@@ -68,4 +68,5 @@ Its type is `person -> person -> int`. It follows the typical -1, 0, 1 conventio
     else 1
   ```
 
-#
+### `sort comparator db`:
+  - **Type**: `(perso
