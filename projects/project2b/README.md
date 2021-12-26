@@ -69,4 +69,5 @@ Its type is `person -> person -> int`. It follows the typical -1, 0, 1 conventio
   ```
 
 ### `sort comparator db`:
-  - **Type**: `(person -> person -> int) -> db -> per
+  - **Type**: `(person -> person -> int) -> db -> person list`
+  - **Description**: g
