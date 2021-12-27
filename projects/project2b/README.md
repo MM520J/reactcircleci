@@ -70,4 +70,4 @@ Its type is `person -> person -> int`. It follows the typical -1, 0, 1 conventio
 
 ### `sort comparator db`:
   - **Type**: `(person -> person -> int) -> db -> person list`
-  - **Description**: g
+  - **Description**: given a comparator function and a db, so
