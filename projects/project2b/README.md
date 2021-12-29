@@ -73,4 +73,5 @@ Its type is `person -> person -> int`. It follows the typical -1, 0, 1 conventio
   - **Description**: given a comparator function and a db, sort the list of people based on the comparator and return in the form of a person list. You may use anything from the `Stdlib` or the `List` modules to help you.
    - **Examples**:
   ```ocaml
-  let db1 = insert {name="Alice";age=23;hobbies=["Skii
+  let db1 = insert {name="Alice";age=23;hobbies=["Skiing";"golfing"]} newDatabase
+  let db
