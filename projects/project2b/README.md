@@ -74,4 +74,4 @@ Its type is `person -> person -> int`. It follows the typical -1, 0, 1 conventio
    - **Examples**:
   ```ocaml
   let db1 = insert {name="Alice";age=23;hobbies=["Skiing";"golfing"]} newDatabase
-  let db2 = insert {name="Bob";age=4
+  let db2 = insert {name="Bob";age=42;hobbies=["Skiing";"Cooking"; "L
