@@ -75,4 +75,4 @@ Its type is `person -> person -> int`. It follows the typical -1, 0, 1 conventio
   ```ocaml
   let db1 = insert {name="Alice";age=23;hobbies=["Skiing";"golfing"]} newDatabase
   let db2 = insert {name="Bob";age=42;hobbies=["Skiing";"Cooking"; "Legos"]} db1
-  sort comparator1 db2
+  sort comparator1 db2 = [{name="Alice";age=23;hobbies=["Sk
