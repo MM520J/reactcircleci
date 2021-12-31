@@ -78,4 +78,6 @@ Its type is `person -> person -> int`. It follows the typical -1, 0, 1 conventio
   sort comparator1 db2 = [{name="Alice";age=23;hobbies=["Skiing";"golfing"]}; {name="Bob";age=42;hobbies=["Skiing";"Cooking"; "Legos"]}]
   ```
 
-#### 
+#### Aside
+
+When we are describing something we ty
