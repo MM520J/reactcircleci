@@ -81,4 +81,5 @@ Its type is `person -> person -> int`. It follows the typical -1, 0, 1 conventio
 #### Aside
 
 When we are describing something we typically link together and modify different 
-descriptors with common words like *and*, *or*, *not*. For example:
+descriptors with common words like *and*, *or*, *not*. For example: "His name 
+is Cliff AND he is older 
