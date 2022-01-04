@@ -84,4 +84,4 @@ When we are describing something we typically link together and modify different
 descriptors with common words like *and*, *or*, *not*. For example: "His name 
 is Cliff AND he is older than 18 AND (he likes Lego OR he likes chocolate)." 
 Here I added parenthesis to remove ambiguity. If we changed the syntax of this
-sentence we can remove some of the 
+sentence we can remove some of the ambiguity: (and his name is cliff
