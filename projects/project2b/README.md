@@ -88,4 +88,6 @@ sentence we can remove some of the ambiguity: (and his name is cliff, and he is
 is older than 18, or he likes Lego, he likes chocolate). Here, while it 
 looks weird and sounds weird if you were to say it out loud, by defining words
 like *and* to link exactly 2 parts together, we can figure out exactly which 
-parts are conjoined and which are under the *or* condi
+parts are conjoined and which are under the *or* condition. 
+Visually this looks like:
+```t
