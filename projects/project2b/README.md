@@ -90,4 +90,7 @@ looks weird and sounds weird if you were to say it out loud, by defining words
 like *and* to link exactly 2 parts together, we can figure out exactly which 
 parts are conjoined and which are under the *or* condition. 
 Visually this looks like:
-```t
+```text
+and(e1,e2)
+or(e1,e2)
+and(na
