@@ -93,4 +93,6 @@ Visually this looks like:
 ```text
 and(e1,e2)
 or(e1,e2)
-and(name is cliff,and(older than 18, o
+and(name is cliff,and(older than 18, or(likes Lego, likes Chocolate)))
+```
+
