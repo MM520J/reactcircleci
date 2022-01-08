@@ -96,4 +96,5 @@ or(e1,e2)
 and(name is cliff,and(older than 18, or(likes Lego, likes Chocolate)))
 ```
 
-The nice part about this modified English 
+The nice part about this modified English grammar/syntax is that we don't have 
+am
