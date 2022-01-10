@@ -97,4 +97,7 @@ and(name is cliff,and(older than 18, or(likes Lego, likes Chocolate)))
 ```
 
 The nice part about this modified English grammar/syntax is that we don't have 
-ambiguity and it's easy to represent
+ambiguity and it's easy to represent this as code. See below.
+
+#### Condition
+A `
