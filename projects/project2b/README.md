@@ -100,4 +100,4 @@ The nice part about this modified English grammar/syntax is that we don't have
 ambiguity and it's easy to represent this as code. See below.
 
 #### Condition
-A `
+A `condition` is a restriction on the comb
