@@ -100,4 +100,4 @@ The nice part about this modified English grammar/syntax is that we don't have
 ambiguity and it's easy to represent this as code. See below.
 
 #### Condition
-A `condition` is a restriction on the combination of age, name, and/or hobbies. We repres
+A `condition` is a restriction on the combination of age, name, and/or hobbies. We represent a condition as a type containing either a t
