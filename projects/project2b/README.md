@@ -105,4 +105,5 @@ A `condition` is a restriction on the combination of age, name, and/or hobbies. 
 type condition = 
   | True
   | False
-  | Age of (int -> boo
+  | Age of (int -> bool)
+  | Name of (string -> bool)
