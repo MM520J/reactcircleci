@@ -107,3 +107,4 @@ type condition =
   | False
   | Age of (int -> bool)
   | Name of (string -> bool)
+  | Hobbies of (string list-> bool)
