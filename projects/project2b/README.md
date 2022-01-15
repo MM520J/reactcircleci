@@ -108,3 +108,5 @@ type condition =
   | Age of (int -> bool)
   | Name of (string -> bool)
   | Hobbies of (string list-> bool)
+  | And of condition * condition
+  
