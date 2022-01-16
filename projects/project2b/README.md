@@ -109,4 +109,5 @@ type condition =
   | Name of (string -> bool)
   | Hobbies of (string list-> bool)
   | And of condition * condition
-  
+  | Or of condition * condition
+  | Not of
