@@ -111,4 +111,8 @@ type condition =
   | And of condition * condition
   | Or of condition * condition
   | Not of condition
-  | If of condition * cond
+  | If of condition * condition * condition
+```
+
+
+Assume that 
