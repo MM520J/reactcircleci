@@ -115,4 +115,4 @@ type condition =
 ```
 
 
-Assume that 
+Assume that conditions assigned to `True` will 
