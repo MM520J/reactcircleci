@@ -115,4 +115,4 @@ type condition =
 ```
 
 
-Assume that conditions assigned to `True` will always evaluate to `true` and `False` will evaluate to `false`. For example, i
+Assume that conditions assigned to `True` will always evaluate to `true` and `False` will evaluate to `false`. For example, if I wanted to get a list of people who ar
