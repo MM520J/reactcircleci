@@ -121,4 +121,5 @@ Assume that conditions assigned to `True` will always evaluate to `true` and `Fa
 ```
 Other examples of valid `condition`s are:
 ```ocaml
-  Fa
+  False
+  Name(fun name -> name = "Alic
