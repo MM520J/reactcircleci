@@ -119,4 +119,6 @@ Assume that conditions assigned to `True` will always evaluate to `true` and `Fa
 ```ocaml
   let condition1 = And(Age(fun age -> age > 30), Name(fun name -> name = "Bob"));;
 ```
-Other examples o
+Other examples of valid `condition`s are:
+```ocaml
+  Fa
