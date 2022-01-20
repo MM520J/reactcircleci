@@ -122,4 +122,6 @@ Assume that conditions assigned to `True` will always evaluate to `true` and `Fa
 Other examples of valid `condition`s are:
 ```ocaml
   False
-  Name(fun name -> name = "Alic
+  Name(fun name -> name = "Alice")
+  Not((Age(fun age -> a < 30)))
+  If(T
