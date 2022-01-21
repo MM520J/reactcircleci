@@ -124,4 +124,5 @@ Other examples of valid `condition`s are:
   False
   Name(fun name -> name = "Alice")
   Not((Age(fun age -> a < 30)))
-  If(True,Age(fun age -> a < 30),Name(fun 
+  If(True,Age(fun age -> a < 30),Name(fun name -> name = "Bob"))
+  (* if true then Ag
