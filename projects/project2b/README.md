@@ -126,4 +126,8 @@ Other examples of valid `condition`s are:
   Not((Age(fun age -> a < 30)))
   If(True,Age(fun age -> a < 30),Name(fun name -> name = "Bob"))
   (* if true then Age else Name *)
-  Or(True,Hobbies(fun hobbie
+  Or(True,Hobbies(fun hobbies -> false))
+```
+
+
+### `query condition db`:
