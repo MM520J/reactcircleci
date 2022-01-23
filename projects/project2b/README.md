@@ -131,3 +131,4 @@ Other examples of valid `condition`s are:
 
 
 ### `query condition db`:
+  - **Type**: `condition -> db -> 
