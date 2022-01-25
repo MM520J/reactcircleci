@@ -132,4 +132,4 @@ Other examples of valid `condition`s are:
 
 ### `query condition db`:
   - **Type**: `condition -> db -> person list`
- - **Description**
+ - **Description**: given a condition and a database, retur
