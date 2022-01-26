@@ -135,4 +135,4 @@ Other examples of valid `condition`s are:
  - **Description**: given a condition and a database, return a list of all entries in the database that satisfy the condition.
  - **Examples**:
   ```ocaml
-  query cond
+  query condition1 db2 = [{name="Bob";age=42;hobbies=
