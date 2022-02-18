@@ -142,4 +142,4 @@ Other examples of valid `condition`s are:
   ```
    
 ### `queryBy condition database comparator`:
-   - **Type**: `
+   - **Type**: `condition -> db -> comparator -> person
