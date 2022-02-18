@@ -141,4 +141,5 @@ Other examples of valid `condition`s are:
   query False db2 = []
   ```
    
-### `queryBy condition 
+### `queryBy condition database comparator`:
+   - **Type**: `
