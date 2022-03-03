@@ -144,4 +144,6 @@ Other examples of valid `condition`s are:
 ### `queryBy condition database comparator`:
    - **Type**: `condition -> db -> comparator -> person list`:
    - **Description**: given a condition, a database, and a comparator, return a list of all entries in the database that satisfy that query that is sorted by the comparator function
-   - **Examp
+   - **Examples**:
+   ```ocaml
+   condition2 = Ag
