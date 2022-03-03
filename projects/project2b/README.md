@@ -147,4 +147,4 @@ Other examples of valid `condition`s are:
    - **Examples**:
    ```ocaml
    condition2 = Age(fun age -> age < 90)
-   queryBy condit
+   queryBy condition2 db2 comparator1 = [{name="Alice";ag
