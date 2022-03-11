@@ -150,4 +150,5 @@ Other examples of valid `condition`s are:
    queryBy condition2 db2 comparator1 = [{name="Alice";age=23;hobbies=["Skiing";"golfing"]}; {name="Bob";age=42;hobbies=["Skiing";"Cooking"; "Legos"]}]
    ```
 
-### `update
+### `update condition db personData`
+  - **Typ
