@@ -151,4 +151,4 @@ Other examples of valid `condition`s are:
    ```
 
 ### `update condition db personData`
-  - **Typ
+  - **Type**: `condition -> db -> (pe
