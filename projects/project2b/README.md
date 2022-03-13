@@ -152,4 +152,4 @@ Other examples of valid `condition`s are:
 
 ### `update condition db personData`
   - **Type**: `condition -> db -> (person -> person) -> db`  
-  - **Description**: given a condition, a database, and a function that will return a person with updat
+  - **Description**: given a condition, a database, and a function that will return a person with updated data given a person, update e
