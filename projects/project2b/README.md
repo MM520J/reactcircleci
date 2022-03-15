@@ -155,4 +155,4 @@ Other examples of valid `condition`s are:
   - **Description**: given a condition, a database, and a function that will return a person with updated data given a person, update every person in the database that satisfies the condition with the given function
   - **Examples**: 
   ```ocaml
-  let change1
+  let change1 = fun person -> { name = person.name; age
