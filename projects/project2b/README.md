@@ -160,4 +160,5 @@ Other examples of valid `condition`s are:
   (* Bob's hobbies are now updated to include pickleball *)
   ```
 
-### `delete
+### `deleteAll condition db`
+  - **Type**
