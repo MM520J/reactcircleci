@@ -161,4 +161,5 @@ Other examples of valid `condition`s are:
   ```
 
 ### `deleteAll condition db`
-  - **Type**
+  - **Type**: `condition -> db -> db` 
+  - **Desc
