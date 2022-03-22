@@ -162,4 +162,4 @@ Other examples of valid `condition`s are:
 
 ### `deleteAll condition db`
   - **Type**: `condition -> db -> db` 
-  - **Description**: given a condition and
+  - **Description**: given a condition and a database, delete all entries
