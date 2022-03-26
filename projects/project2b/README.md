@@ -163,4 +163,7 @@ Other examples of valid `condition`s are:
 ### `deleteAll condition db`
   - **Type**: `condition -> db -> db` 
   - **Description**: given a condition and a database, delete all entries
-   in the database that satisfy the
+   in the database that satisfy the query
+  - **Examples**: 
+  ```ocaml
+  del
