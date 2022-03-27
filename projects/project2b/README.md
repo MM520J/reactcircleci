@@ -166,4 +166,5 @@ Other examples of valid `condition`s are:
    in the database that satisfy the query
   - **Examples**: 
   ```ocaml
-  del
+  deleteAll condition1 db2
+  (* Bob is delete
