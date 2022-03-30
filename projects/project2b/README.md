@@ -167,4 +167,7 @@ Other examples of valid `condition`s are:
   - **Examples**: 
   ```ocaml
   deleteAll condition1 db2
-  (* Bob is delete
+  (* Bob is deleted from our database *)
+  ```
+
+## Part 2: Higher O
