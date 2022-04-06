@@ -170,4 +170,6 @@ Other examples of valid `condition`s are:
   (* Bob is deleted from our database *)
   ```
 
-## Part 2: Higher O
+## Part 2: Higher Order Functions On Trees
+
+***This part is independent
