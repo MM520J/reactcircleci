@@ -174,4 +174,7 @@ Other examples of valid `condition`s are:
 
 ***This part is independent of Part 1***
 
-Given the type of a binary tree, implement `fold` an
+Given the type of a binary tree, implement `fold` and `map` operations.
+
+```ocaml
+type 'a tre
