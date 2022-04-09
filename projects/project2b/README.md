@@ -177,4 +177,5 @@ Other examples of valid `condition`s are:
 Given the type of a binary tree, implement `fold` and `map` operations.
 
 ```ocaml
-type 'a tre
+type 'a tree =
+  | Node of 'a tree * 'a * 'a tre
