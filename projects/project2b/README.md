@@ -174,4 +174,4 @@ Other examples of valid `condition`s are:
 
 ***This part is independent of Part 1***
 
-Given the type of a 
+Given the type of a binary tree, implement `fold` an
