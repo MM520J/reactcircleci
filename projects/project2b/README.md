@@ -172,4 +172,6 @@ Other examples of valid `condition`s are:
 
 ## Part 2: Higher Order Functions On Trees
 
-***This part is independent
+***This part is independent of Part 1***
+
+Given the type of a 
