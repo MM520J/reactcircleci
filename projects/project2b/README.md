@@ -178,4 +178,9 @@ Given the type of a binary tree, implement `fold` and `map` operations.
 
 ```ocaml
 type 'a tree =
-  | Node of 'a tree * 'a * 'a tre
+  | Node of 'a tree * 'a * 'a tree
+  | Leaf
+
+```
+
+Given this type
