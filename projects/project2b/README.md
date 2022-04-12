@@ -185,4 +185,5 @@ type 'a tree =
 
 Given this type implement the following functions
 
-### `tr
+### `tree_fold f init tree` 
+  - **Type**: `(('a -> 'b 
