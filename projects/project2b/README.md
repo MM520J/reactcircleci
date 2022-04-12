@@ -183,4 +183,6 @@ type 'a tree =
 
 ```
 
-Given this type
+Given this type implement the following functions
+
+### `tr
