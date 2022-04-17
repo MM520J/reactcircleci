@@ -187,4 +187,4 @@ Given this type implement the following functions
 
 ### `tree_fold f init tree` 
   - **Type**: `(('a -> 'b -> 'a -> 'a) -> 'a -> 'b tree -> 'a)`
-  - **Description**: Given a 
+  - **Description**: Given a function `f`, accumulator `init`, an
