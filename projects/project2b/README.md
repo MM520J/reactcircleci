@@ -188,4 +188,4 @@ Given this type implement the following functions
 ### `tree_fold f init tree` 
   - **Type**: `(('a -> 'b -> 'a -> 'a) -> 'a -> 'b tree -> 'a)`
   - **Description**: Given a function `f`, accumulator `init`, and `tree`, iterate over the given tree using `f` and return the iterated value of type `'a`. 
-  The function `f` will take
+  The function `f` will take in three parameters: the value of the acc
