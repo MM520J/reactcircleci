@@ -192,4 +192,4 @@ Given this type implement the following functions
 
   - **Examples**:
   ```ocaml
-  let treea = Node(Node(Leaf
+  let treea = Node(Node(Leaf, "Hello", Leaf), " World", Node(L
