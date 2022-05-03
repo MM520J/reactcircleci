@@ -191,4 +191,5 @@ Given this type implement the following functions
   The function `f` will take in three parameters: the value of the accumulator returned by the left branch of the node, the value of the current node, and the value of the accumulator returned by the right branch of the node, and should then return the new accumulated value of type `'a`.
 
   - **Examples**:
-  ```o
+  ```ocaml
+  let treea = Node(Node(Leaf
