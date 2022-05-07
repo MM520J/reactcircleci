@@ -193,4 +193,4 @@ Given this type implement the following functions
   - **Examples**:
   ```ocaml
   let treea = Node(Node(Leaf, "Hello", Leaf), " World", Node(Leaf, "!", Leaf)) in
-  let tr
+  let treeb = Node(Node(Leaf, 5, Leaf), 6, Le
