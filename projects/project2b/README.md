@@ -195,4 +195,5 @@ Given this type implement the following functions
   let treea = Node(Node(Leaf, "Hello", Leaf), " World", Node(Leaf, "!", Leaf)) in
   let treeb = Node(Node(Leaf, 5, Leaf), 6, Leaf) in
   
-  tree_fold (fun l s r -> l
+  tree_fold (fun l s r -> l ^ s ^ r) "" treea = "Hello World!"
+  tree_f
