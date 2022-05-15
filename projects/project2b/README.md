@@ -196,4 +196,7 @@ Given this type implement the following functions
   let treeb = Node(Node(Leaf, 5, Leaf), 6, Leaf) in
   
   tree_fold (fun l s r -> l ^ s ^ r) "" treea = "Hello World!"
-  tree_fold (fun l x r -> max (max l x) r) 0 tre
+  tree_fold (fun l x r -> max (max l x) r) 0 treeb = 6
+  ```
+   
+### `map tre
