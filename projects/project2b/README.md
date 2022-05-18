@@ -201,4 +201,4 @@ Given this type implement the following functions
    
 ### `map tree f`
   - **Type**: `('a tree -> ('a -> 'b) -> 'b tree)`
-  - **Description**: Given a func
+  - **Description**: Given a function `f`, map all the values of the n
