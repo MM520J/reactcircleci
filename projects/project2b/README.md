@@ -199,4 +199,5 @@ Given this type implement the following functions
   tree_fold (fun l x r -> max (max l x) r) 0 treeb = 6
   ```
    
-### `map tre
+### `map tree f`
+  - **Type**: `('a tree -> ('a -> 'b) ->
