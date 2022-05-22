@@ -202,4 +202,5 @@ Given this type implement the following functions
 ### `map tree f`
   - **Type**: `('a tree -> ('a -> 'b) -> 'b tree)`
   - **Description**: Given a function `f`, map all the values of the nodes in the tree using `f`. You must implement this function using `tree_fold`.
-  Note that the mapped tree should still return the same tree shape with the
+  Note that the mapped tree should still return the same tree shape with the corresponding mapped nodes.
+  - **Exa
