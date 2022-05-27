@@ -205,4 +205,5 @@ Given this type implement the following functions
   Note that the mapped tree should still return the same tree shape with the corresponding mapped nodes.
   - **Examples**:
   ```ocaml
-  let treea = Node(Node(Leaf, 1, Leaf), 2, Node(Leaf
+  let treea = Node(Node(Leaf, 1, Leaf), 2, Node(Leaf, 2, Leaf)) in
+  let treeb = Node(Node(
