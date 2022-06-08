@@ -209,4 +209,7 @@ Given this type implement the following functions
   let treeb = Node(Node(Leaf, 1, Leaf), 2, Node(Node(Leaf, 3, Leaf), 4, Leaf)) in
   
   map treea string_of_int = Node(Node(Leaf, "1", Leaf), "2", Node(Leaf, "2", Leaf))
-  map treeb (fun x -> x + 1) = Node(Node(Leaf, 2, Leaf), 3, Node(Node(Leaf, 4, Le
+  map treeb (fun x -> x + 1) = Node(Node(Leaf, 2, Leaf), 3, Node(Node(Leaf, 4, Leaf), 5, Leaf)) 
+  ```
+ 
+### `mirror 
