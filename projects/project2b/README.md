@@ -212,4 +212,5 @@ Given this type implement the following functions
   map treeb (fun x -> x + 1) = Node(Node(Leaf, 2, Leaf), 3, Node(Node(Leaf, 4, Leaf), 5, Leaf)) 
   ```
  
-### `mirror 
+### `mirror tree`
+  - **Type**: `('a tree -> 
