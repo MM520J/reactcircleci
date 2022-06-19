@@ -213,4 +213,5 @@ Given this type implement the following functions
   ```
  
 ### `mirror tree`
-  - **Type**: `('a tree -> 
+  - **Type**: `('a tree -> 'a tree)`
+  - **Description**: Write a functio
