@@ -214,4 +214,4 @@ Given this type implement the following functions
  
 ### `mirror tree`
   - **Type**: `('a tree -> 'a tree)`
-  - **Description**: Write a functio
+  - **Description**: Write a function using `tree_fold` that will return the giv
