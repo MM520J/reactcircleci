@@ -217,4 +217,5 @@ Given this type implement the following functions
   - **Description**: Write a function using `tree_fold` that will return the given tree with the left and right branches swapped at each node.
   - **Examples**:
   ```ocaml
-  let treea = Node(Node(Leaf, 1,
+  let treea = Node(Node(Leaf, 1, Leaf), 2, Node(Leaf, 3, Leaf))
+  let treeb = No
