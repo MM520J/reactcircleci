@@ -224,4 +224,5 @@ Given this type implement the following functions
   mirror treeb = Node(Node(Leaf, 4, Node(Leaf, 3, Leaf)), 2, Node(Leaf, 1, Leaf))
   ```
    
-### `
+### `in_order tree`
+  - **Type**: 
