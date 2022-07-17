@@ -221,4 +221,4 @@ Given this type implement the following functions
   let treeb = Node(Node(Leaf, 1, Leaf), 2, Node(Node(Leaf, 3, Leaf), 4, Leaf))
   
   mirror treea = Node(Node(Leaf, 3, Leaf), 2, Node(Leaf, 1, Leaf));
-  m
+  mirror treeb = Node(Node(Leaf, 4, No
