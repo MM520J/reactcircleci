@@ -225,4 +225,5 @@ Given this type implement the following functions
   ```
    
 ### `in_order tree`
-  - **Type**: 
+  - **Type**: `('a tree -> 'a list)`
+  - **Description**:
