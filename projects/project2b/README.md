@@ -226,4 +226,4 @@ Given this type implement the following functions
    
 ### `in_order tree`
   - **Type**: `('a tree -> 'a list)`
-  - **Description**:
+  - **Description**: Using `tree_fold`, write a function that wi
