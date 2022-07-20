@@ -229,4 +229,5 @@ Given this type implement the following functions
   - **Description**: Using `tree_fold`, write a function that will return a list containing the inorder traversal of the tree.
   - **Examples**:
   ```ocaml
-  let treea = Node(Node(Leaf, 1, Leaf), 2, Node(L
+  let treea = Node(Node(Leaf, 1, Leaf), 2, Node(Leaf, 3, Leaf))
+  let treeb = Node(Node(Leaf, 1,
