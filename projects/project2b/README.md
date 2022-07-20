@@ -226,4 +226,6 @@ Given this type implement the following functions
    
 ### `in_order tree`
   - **Type**: `('a tree -> 'a list)`
-  - **Description**: Using `tree_fold`, write a function that will return a list containing the inorder 
+  - **Description**: Using `tree_fold`, write a function that will return a list containing the inorder traversal of the tree.
+  - **Examples**:
+  ```ocaml
