@@ -233,4 +233,7 @@ Given this type implement the following functions
   let treeb = Node(Node(Leaf, 1, Leaf), 2, Node(Node(Leaf, 3, Leaf), 4, Leaf))
   
   in_order treea = [1; 2; 3]
-  in_order treeb = [1; 2; 3;
+  in_order treeb = [1; 2; 3; 4]
+  ```
+
+### `pre_order tree`
