@@ -239,4 +239,6 @@ Given this type implement the following functions
 ### `pre_order tree`
   - **Type**: `('a tree -> 'a list)`
   - **Description**: Using `tree_fold`, write a function that will return a list containing the preorder traversal of the tree.
-  - **Exam
+  - **Examples**:
+  ```ocaml
+  let treea = Node(Node(Le
