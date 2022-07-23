@@ -238,4 +238,4 @@ Given this type implement the following functions
 
 ### `pre_order tree`
   - **Type**: `('a tree -> 'a list)`
-  
+  - **Description**: Using `tree_fold`, write a functio
