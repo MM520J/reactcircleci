@@ -244,4 +244,5 @@ Given this type implement the following functions
   let treea = Node(Node(Leaf, 1, Leaf), 2, Node(Leaf, 3, Leaf))
   let treeb = Node(Node(Leaf, 1, Leaf), 2, Node(Node(Leaf, 3, Leaf), 4, Leaf))
   
-  pre_ord
+  pre_order treea = [2; 1; 3]
+  pre_order treeb = [2; 1; 
