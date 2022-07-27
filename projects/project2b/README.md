@@ -245,4 +245,7 @@ Given this type implement the following functions
   let treeb = Node(Node(Leaf, 1, Leaf), 2, Node(Node(Leaf, 3, Leaf), 4, Leaf))
   
   pre_order treea = [2; 1; 3]
-  pre_order treeb = [2; 1; 
+  pre_order treeb = [2; 1; 4; 3]
+  ```
+   
+### `compose tre
