@@ -249,4 +249,5 @@ Given this type implement the following functions
   ```
    
 ### `compose tree`
-  - **Type**: `(('a -> 'a) tree -> 'a ->
+  - **Type**: `(('a -> 'a) tree -> 'a -> 'a)`
+  - **Description**: This functio
