@@ -248,4 +248,5 @@ Given this type implement the following functions
   pre_order treeb = [2; 1; 4; 3]
   ```
    
-### `compose tre
+### `compose tree`
+  - **Type**: `(('a -> 'a) tree -> 'a ->
