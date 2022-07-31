@@ -250,4 +250,4 @@ Given this type implement the following functions
    
 ### `compose tree`
   - **Type**: `(('a -> 'a) tree -> 'a -> 'a)`
-  - **Description**: This function will take in a tree that contain
+  - **Description**: This function will take in a tree that contains `('a -> 'a)` functions as the value in
