@@ -255,4 +255,5 @@ Given this type implement the following functions
   Consider the following diagram of a tree.
 ```  
                   +------+
-          +--
+          +-------+ f(x) +-------+
+          | 
