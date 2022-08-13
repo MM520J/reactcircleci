@@ -253,3 +253,6 @@ Given this type implement the following functions
   - **Description**: This function will take in a tree that contains `('a -> 'a)` functions as the value in the nodes and returns a function that is the *inorder* composition of the nodes. You must implement this function using `tree_fold`.
   - **Examples**:
   Consider the following diagram of a tree.
+```  
+                  +------+
+          +--
