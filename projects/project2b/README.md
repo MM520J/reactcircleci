@@ -257,4 +257,5 @@ Given this type implement the following functions
                   +------+
           +-------+ f(x) +-------+
           |       +------+       |
-          |    
+          |                      |
+       +--+---+              +
