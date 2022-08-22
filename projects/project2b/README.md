@@ -258,4 +258,5 @@ Given this type implement the following functions
           +-------+ f(x) +-------+
           |       +------+       |
           |                      |
-       +--+---+              +
+       +--+---+              +---+--+
+   +---+ g(x) |          +---+ h(x) 
