@@ -260,4 +260,6 @@ Given this type implement the following functions
           |                      |
        +--+---+              +---+--+
    +---+ g(x) |          +---+ h(x) |
-   |   +------+          |   +------
+   |   +------+          |   +------+
+   |                     |
++--+---+ 
