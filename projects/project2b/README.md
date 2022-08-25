@@ -263,4 +263,5 @@ Given this type implement the following functions
    |   +------+          |   +------+
    |                     |
 +--+---+              +--+---+
-| v(x) |         
+| v(x) |              | y(x) |
++------+              +--
