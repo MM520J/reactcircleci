@@ -266,4 +266,5 @@ Given this type implement the following functions
 | v(x) |              | y(x) |
 +------+              +------+
 ```
-  The result of calling `compose` on this function would be equivalent to `(fun 
+  The result of calling `compose` on this function would be equivalent to `(fun x -> h (y (f (g (v x)))))`
+  ```oc
