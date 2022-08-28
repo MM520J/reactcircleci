@@ -266,4 +266,4 @@ Given this type implement the following functions
 | v(x) |              | y(x) |
 +------+              +------+
 ```
-  The result of cal
+  The result of calling `compose` on this functio
