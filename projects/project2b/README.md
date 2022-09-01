@@ -270,4 +270,4 @@ Given this type implement the following functions
   ```ocaml
   let function_tree =
     Node(
- 
+        Node(Leaf, (fun x -> x+1), Leaf
