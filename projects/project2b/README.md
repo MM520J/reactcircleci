@@ -272,4 +272,6 @@ Given this type implement the following functions
     Node(
         Node(Leaf, (fun x -> x+1), Leaf),
         (fun x -> x*x),
-        N
+        Node(Leaf, (fun x -> -x +x*x), Leaf))
+
+  let composed 
