@@ -274,4 +274,6 @@ Given this type implement the following functions
         (fun x -> x*x),
         Node(Leaf, (fun x -> -x +x*x), Leaf))
 
-  let composed 
+  let composed = compose function_tree
+    composed 0 = 0
+    c
