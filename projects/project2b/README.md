@@ -276,4 +276,6 @@ Given this type implement the following functions
 
   let composed = compose function_tree
     composed 0 = 0
-    c
+    composed 1 = 12
+
+  let composed2 = com
