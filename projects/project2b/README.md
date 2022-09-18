@@ -278,4 +278,6 @@ Given this type implement the following functions
     composed 0 = 0
     composed 1 = 12
 
-  let composed2 = com
+  let composed2 = compose Leaf
+    composed2 2 = 2
+    composed2
