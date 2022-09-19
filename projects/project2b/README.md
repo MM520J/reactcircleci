@@ -280,4 +280,8 @@ Given this type implement the following functions
 
   let composed2 = compose Leaf
     composed2 2 = 2
-    composed2
+    composed2 15 = 15
+  ```
+
+### `depth tree`
+  - **Ty
