@@ -284,4 +284,5 @@ Given this type implement the following functions
   ```
 
 ### `depth tree`
-  - **Ty
+  - **Type**: `('a tree -> int)`
+  - **Descri
