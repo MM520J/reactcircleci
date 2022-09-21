@@ -285,4 +285,4 @@ Given this type implement the following functions
 
 ### `depth tree`
   - **Type**: `('a tree -> int)`
-  - **Description**: Using `tree_fold` w
+  - **Description**: Using `tree_fold` write a function that returns the depth of the deepest
