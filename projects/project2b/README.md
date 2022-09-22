@@ -288,4 +288,5 @@ Given this type implement the following functions
   - **Description**: Using `tree_fold` write a function that returns the depth of the deepest node in the tree.
   - **Examples**:
   ```ocaml
-  let treea = Node(Node(L
+  let treea = Node(Node(Leaf, 1, Leaf), 2, Node(Leaf, 3, Leaf)) in
+  l
