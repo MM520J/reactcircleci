@@ -287,4 +287,5 @@ Given this type implement the following functions
   - **Type**: `('a tree -> int)`
   - **Description**: Using `tree_fold` write a function that returns the depth of the deepest node in the tree.
   - **Examples**:
-  `
+  ```ocaml
+  let treea = Node(Node(L
