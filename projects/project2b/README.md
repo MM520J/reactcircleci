@@ -289,4 +289,6 @@ Given this type implement the following functions
   - **Examples**:
   ```ocaml
   let treea = Node(Node(Leaf, 1, Leaf), 2, Node(Leaf, 3, Leaf)) in
-  let treeb = Node(Node(Leaf, 1, L
+  let treeb = Node(Node(Leaf, 1, Leaf), 2, Node(Node(Leaf, 3, Leaf), 4, Leaf)) in
+
+  de
