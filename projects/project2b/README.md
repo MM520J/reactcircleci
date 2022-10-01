@@ -291,4 +291,5 @@ Given this type implement the following functions
   let treea = Node(Node(Leaf, 1, Leaf), 2, Node(Leaf, 3, Leaf)) in
   let treeb = Node(Node(Leaf, 1, Leaf), 2, Node(Node(Leaf, 3, Leaf), 4, Leaf)) in
 
-  de
+  depth treea = 2
+  depth treeb = 3
