@@ -296,4 +296,5 @@ Given this type implement the following functions
   depth Leaf = 0
   ```
    
-### `tri
+### `trim tree n`
+  - **Type**: `('a tree -> in
