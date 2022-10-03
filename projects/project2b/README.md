@@ -293,3 +293,7 @@ Given this type implement the following functions
 
   depth treea = 2
   depth treeb = 3
+  depth Leaf = 0
+  ```
+   
+### `tri
