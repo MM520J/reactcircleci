@@ -297,4 +297,5 @@ Given this type implement the following functions
   ```
    
 ### `trim tree n`
-  - **Type**: `('a tree -> in
+  - **Type**: `('a tree -> int -> 'a tree)`
+  - **Description**: Using `t
