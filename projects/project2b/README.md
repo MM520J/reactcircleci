@@ -298,4 +298,4 @@ Given this type implement the following functions
    
 ### `trim tree n`
   - **Type**: `('a tree -> int -> 'a tree)`
-  - **Description**: Using `t
+  - **Description**: Using `tree_fold` write a function that takes 
