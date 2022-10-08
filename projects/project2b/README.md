@@ -298,4 +298,4 @@ Given this type implement the following functions
    
 ### `trim tree n`
   - **Type**: `('a tree -> int -> 'a tree)`
-  - **Description**: Using `tree_fold` write a function that takes in a complete binary tree `tree` and an integer `n`, and trims off nodes at 
+  - **Description**: Using `tree_fold` write a function that takes in a complete binary tree `tree` and an integer `n`, and trims off nodes at the bottom of the tree such that the depth o
