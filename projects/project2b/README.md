@@ -301,4 +301,4 @@ Given this type implement the following functions
   - **Description**: Using `tree_fold` write a function that takes in a complete binary tree `tree` and an integer `n`, and trims off nodes at the bottom of the tree such that the depth of the returned tree is at most n.
   - **Examples**:
   ```ocaml
-  let tree = Node(Node(Node(Leaf, 4, Leaf), 2, Node(Leaf, 4, Leaf)), 1, Node(Node(Leaf, 4
+  let tree = Node(Node(Node(Leaf, 4, Leaf), 2, Node(Leaf, 4, Leaf)), 1, Node(Node(Leaf, 4, Leaf), 2, Node(Leaf, 4, Leaf
