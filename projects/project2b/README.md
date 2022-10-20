@@ -305,3 +305,6 @@ Given this type implement the following functions
 
   trim tree 1 = Node(Leaf, 1, Leaf);
   trim tree 2 = Node(Node(Leaf, 2, Leaf), 1, Node(Leaf, 2, Leaf))
+  ```
+## Part 3: Generating Trees
+####
