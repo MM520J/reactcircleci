@@ -303,4 +303,5 @@ Given this type implement the following functions
   ```ocaml
   let tree = Node(Node(Node(Leaf, 4, Leaf), 2, Node(Leaf, 4, Leaf)), 1, Node(Node(Leaf, 4, Leaf), 2, Node(Leaf, 4, Leaf))) in
 
-  trim tree 1 = Node(Leaf, 1, 
+  trim tree 1 = Node(Leaf, 1, Leaf);
+  trim tree 2 = Node(Node(Leaf
