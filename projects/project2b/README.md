@@ -308,4 +308,5 @@ Given this type implement the following functions
   ```
 ## Part 3: Generating Trees
 #### Options
-An `option` type is a built in variant that indicates the prese
+An `option` type is a built in variant that indicates the presence or absence of a value of type `'a`: 
+  ```ocam
