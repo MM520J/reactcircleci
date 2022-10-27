@@ -315,4 +315,4 @@ An `option` type is a built in variant that indicates the presence or absence of
   | Some of 'a
   ```
 
-##### Note: The functions **`tree_init`** and **`split`** are **optional**
+##### Note: The functions **`tree_init`** and **`split`** are **optional** and will not be tested on, but are r
