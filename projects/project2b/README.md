@@ -318,4 +318,4 @@ An `option` type is a built in variant that indicates the presence or absence of
 ##### Note: The functions **`tree_init`** and **`split`** are **optional** and will not be tested on, but are recommended helper functions for `from_pre_in`.
 ### `tree_init f v`
   - **Type**: `('a -> ('a * 'b * 'a) option) -> 'a -> 'b tree)`
-  - **Description**: A genera
+  - **Description**: A generator `f` is a function that returns a
