@@ -319,4 +319,4 @@ An `option` type is a built in variant that indicates the presence or absence of
 ### `tree_init f v`
   - **Type**: `('a -> ('a * 'b * 'a) option) -> 'a -> 'b tree)`
   - **Description**: A generator `f` is a function that returns a tuple of 3 values: (`v1`, `v2`, `v3`). Using the definition of type `Option`, `f`, and an init value `v`, build a tree that has a root node with value `v2` and a new generated left subtree with init value `v1` and a new generated right subtree with init `v3`.
-  I
+  If `f` returns `None`, a `Leaf` will be pla
