@@ -323,4 +323,5 @@ An `option` type is a built in variant that indicates the presence or absence of
   - **Examples**:
   ```ocaml
   let generator1 a =
-   
+    if a <= 3 then
+	  Some (a+1, a, a+
