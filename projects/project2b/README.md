@@ -329,4 +329,7 @@ An `option` type is a built in variant that indicates the presence or absence of
 	
   let generator2 a =
     if a <= 3 then
-	  Some (a+1, a, 
+	  Some (a+1, a, a+2)
+    else None
+	
+  tree_init generator
