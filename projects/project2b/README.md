@@ -332,4 +332,4 @@ An `option` type is a built in variant that indicates the presence or absence of
 	  Some (a+1, a, a+2)
     else None
 	
-  tree_init generator1 1 = Node(Node(Node(Leaf, 3, Leaf), 2, Node(Leaf, 3, Leaf)), 1, N
+  tree_init generator1 1 = Node(Node(Node(Leaf, 3, Leaf), 2, Node(Leaf, 3, Leaf)), 1, Node(Node(Leaf, 3, Leaf), 2, Node(Leaf, 3, L
