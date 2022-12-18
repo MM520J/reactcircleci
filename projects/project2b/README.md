@@ -337,4 +337,5 @@ An `option` type is a built in variant that indicates the presence or absence of
   ```
 
 ### `split lst v`
-  - **Type**: `'a list -> 'a -> 'a 
+  - **Type**: `'a list -> 'a -> 'a list * 'a list`
+  - **Description**: 
