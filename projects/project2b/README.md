@@ -336,4 +336,5 @@ An `option` type is a built in variant that indicates the presence or absence of
   tree_init generator2 1 = Node(Node(Node(Leaf, 3, Leaf), 2, Leaf), 1, Node(Leaf, 3, Leaf))
   ```
 
-##
+### `split lst v`
+  - **Type**: `'a list -> 'a -> 'a 
