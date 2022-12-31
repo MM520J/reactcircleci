@@ -339,4 +339,6 @@ An `option` type is a built in variant that indicates the presence or absence of
 ### `split lst v`
   - **Type**: `'a list -> 'a -> 'a list * 'a list`
   - **Description**: Given a list `lst` find the first instance of `v` in the list, and return a tuple of lists where the first list in the tuple is all the elements that come before `v` in `lst` and the second element contains all the elements that come after `v` in `lst`
-  - **Examples
+  - **Examples**:
+  ```ocaml
+  split [1; 2; 3; 4] 2 = ([
