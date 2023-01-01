@@ -342,4 +342,4 @@ An `option` type is a built in variant that indicates the presence or absence of
   - **Examples**:
   ```ocaml
   split [1; 2; 3; 4] 2 = ([1]; [3; 4])
-  split ["Hello"; 
+  split ["Hello"; "World"] "World" = (["Hello"], [])
