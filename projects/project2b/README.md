@@ -347,4 +347,4 @@ An `option` type is a built in variant that indicates the presence or absence of
    
 ### `from_pre_in pre in_ord`
   - **Type**: `('a list -> 'a list -> 'a tree)`
-  - **Description**: Given a list containing the pre-order trave
+  - **Description**: Given a list containing the pre-order traversal of a tree `pre` and a list containing the in
