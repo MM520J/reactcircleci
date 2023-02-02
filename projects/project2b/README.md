@@ -348,4 +348,6 @@ An `option` type is a built in variant that indicates the presence or absence of
 ### `from_pre_in pre in_ord`
   - **Type**: `('a list -> 'a list -> 'a tree)`
   - **Description**: Given a list containing the pre-order traversal of a tree `pre` and a list containing the in-order traversal of a tree `in_ord`, create a tree that corresponds to the two traversals. Assume there will be no duplicate nodes in the tree. You may use the algorithm described [here](./from_pre_in.pdf) to implement this function. ***Hint: You can use `tree_init` and `split` in this function***
-  
+  - **Examples**:
+  ```ocaml
+  le
