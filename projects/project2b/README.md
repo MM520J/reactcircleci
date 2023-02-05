@@ -351,4 +351,4 @@ An `option` type is a built in variant that indicates the presence or absence of
   - **Examples**:
   ```ocaml
   let treea = Node(Node(Leaf, 1, Leaf), 2, Node(Leaf, 3, Leaf))
-  let treeb =
+  let treeb = Node(Node(Leaf, 1, Leaf), 2, Node(Node(Le
