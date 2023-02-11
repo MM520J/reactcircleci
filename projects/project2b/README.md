@@ -354,4 +354,6 @@ An `option` type is a built in variant that indicates the presence or absence of
   let treeb = Node(Node(Leaf, 1, Leaf), 2, Node(Node(Leaf, 3, Leaf), 4, Leaf));;
 
   from_pre_in [2; 1; 3] [1; 2; 3] = treea;
-  from_pre_in [2; 1; 4; 3] [1; 2; 3; 4] = 
+  from_pre_in [2; 1; 4; 3] [1; 2; 3; 4] = treeb
+  ```
+
