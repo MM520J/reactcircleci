@@ -30,3 +30,41 @@ Several helper functions have been provided for you, as detailed at the end of t
 The procedure for testing this project is the same as the previous project. `dune` handles the majority of the work but, an environment variable must be set for `dune` to know where to find the precompiled binary files distributed with the project.
 
 For this project, you must have OCaml version >= 4.12.0. To make sure you have the correct version of OCaml, run `ocaml --version`. If your version of OCaml is not 4.12.0 or later, refer to the project 0 instructions to update your version.
+
+Public and student tests can be run using the same `dune` command that you used in the previous projects but, you need to set the environment variable `OCAMLPATH` before running the command. The full command is now `env OCAMLPATH=dep dune runtest -f`. Setting `OCAMLPATH` tells `dune` where it can find the functions over sets that we have provided. You will need to provide this environment variable for every `dune` command so you may want to add it to your environment once by running `OCAMLPATH=dep` as separate command before using `dune`. We have also provided a shell script `test.sh` that runs the command given above.  To run this, type `sh test.sh` at a terminal.
+
+For testing your regular expressions and `nfa_to_dfa`, we've provided another build target: `viz`. When you run this command, it will read a regular expression from standard in, compose an NFA from it, and export that NFA to Graphviz before rendering to a PNG. For this target to work, however, you must install Graphviz.
+
+You are not required to do this, but it may be helpful in debugging your code. Once you've performed these steps, you can run the visualizer as follows:
+
+1. Run the shell script `./viz.sh` or the command `env OCAMLPATH=dep dune exec bin/viz.bc` to open the input shell.
+2. The shell will ask for a regular expression. Type without spaces and using only the constructs supported by this project.
+3. Select if you want to convert the NFA to a DFA (with your conversion function) before visualizing.
+4. You should be notified that the image has been successfully generated and put in `output.png`.
+5. Use an image viewer of choice to open `output.png` and see the visual representation of your generated NFA.
+
+### Submitting
+
+You will submit this project to Gradescope using `gradescope-submit` or `submit`. Alternatively, you can manually submit the project on [Gradescope](https://www.gradescope.com) by clicking on the "Project 3" assignment and **ONLY** submit your `nfa.ml` file and `regexp.ml`.  You must submit both of these files every time, and any other files will be ignored.
+
+Instructions to use the new optional submit process can be found [here](./GRADESCOPE_SUBMIT.md)
+
+### Academic Integrity
+
+Please **carefully read** the academic honesty section of the course syllabus. **Any evidence** of impermissible cooperation on projects, use of disallowed materials or resources, or unauthorized use of computer accounts, **will** be submitted to the Student Honor Council, which could result in an XF for the course, or suspension or expulsion from the University. Be sure you understand what you are and what you are not permitted to do in regards to academic integrity when it comes to project assignments. These policies apply to all students, and the Student Honor Council does not consider lack of knowledge of the policies to be a defense for violating them. Full information is found in the course syllabus, which you should review before starting.
+
+## Part 1: NFAs
+
+This first part of the project asks you to implement some functions for working with NFAs. In particular, you will be asked to implement the *move* and *epsilon closure* functions [described in class][lecture notes]; these will be handy for Part 2. You will also implement an `accept` function to determine whether a string is matched by a given NFA; both *move* and *epsilon closure* may be handy here, too.
+
+### NFA Types
+
+Before starting, you'll want to familiarize yourself with the types you will be working with.
+
+The type `nfa_t` is the type representing NFAs. It is modeled after the formal definition of an NFA, a 5-tuple (Σ, Q, q0, F, δ) where:
+
+1. Σ is a finite alphabet,
+2. Q is a finite set of states,
+3. q0 ∈ Q is the start state,
+4. F ⊆ Q is the set of accept states, and
+5. δ : Q × (Σ ∪ {ε}) → 𝒫(Q) is the transition function (𝒫(Q) represents the powerset of Q).
