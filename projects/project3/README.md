@@ -106,3 +106,42 @@ let nfa_ex = {
 ```
 
 This looks like:
+
+![NFA m](images/m_viz.png)
+
+Here is a DFA:
+
+```ocaml
+let dfa_ex = {
+    sigma = ['a'; 'b'; 'c'];
+    qs = [0; 1; 2];
+    q0 = 0;
+    fs = [2];
+    delta = [(0, Some 'a', 1); (1, Some 'b', 0); (1, Some 'c', 2)]
+}
+```
+
+This looks like:
+
+![NFA n](images/n_viz.png)
+
+### Functions
+
+Here are the functions you must implement:
+
+#### `move nfa qs s`
+
+- **Type**: `('q, 's) nfa_t -> 'q list -> 's option -> 'q list`
+- **Description**: This function takes as input an NFA, a set of initial states, and a symbol option. The output will be the set of states (represented by a list) that the NFA might be in after making one transition on the symbol (or epsilon if None), starting from any of the initial states. It means starting from any of the initial states, where it can go to after it makes one transition on the symbol if the symbol option is not none; otherwise it will just take an epsilon transition. If the symbol is not in the alphabet `sigma`, then return an empty list.
+
+- **Examples**:
+
+  ```ocaml
+  move nfa_ex [0] (Some 'a') = [1] (* nfa_ex is the NFA defined above *)
+  move nfa_ex [1] (Some 'a') = []
+  move nfa_ex [2] (Some 'a') = []
+  move nfa_ex [0;1] (Some 'a')  = [1]
+  move nfa_ex [1] None = [2]
+  ```
+
+- **Explanation**:
