@@ -206,3 +206,47 @@ To write `nfa_to_dfa` we will  write some helpers. These helpers follow the NFA 
 - **Type**: `('q, 's) nfa_t -> 'q list -> 'q list list`
 - **Description**: Given an NFA and a DFA state computes all the DFA states that you can get to from a transition out of `qs` (including the dead state). Dead states are represented by empty lists. *Note: each element in the set corresponds to all of the states you can get to from one character of the alphabet (`sigma`) followed by any number of epsilon transitions*
 - **Examples**:
+
+  ```ocaml
+  new_states nfa_ex [0] = [[1; 2]]
+  new_states dfa_ex [0; 1] = [[1]; [0]; [2]]
+  ```
+
+### `new_trans nfa qs`
+
+- **Type**: `('q, 's) nfa_t -> 'q list -> ('q list, 's) transition list`
+- **Description**: Given an NFA and a DFA state, computes all the transitions coming from `qs` (including the dead state) in the DFA.
+- **Examples**:
+
+  ```ocaml
+  new_trans dfa_ex [0; 1] = [([0; 1], Some 'a', [1]); ([0; 1], Some 'b', [0]); ([0; 1], Some 'c', [2])]
+  ```
+
+### `new_finals nfa qs`
+
+- **Type**: `('q, 's) nfa_t -> 'q list -> 'q list list`
+- **Description**: Given an NFA and a DFA state, returns `[qs]` if `qs` is final in the DFA and `[]` otherwise.
+- **Examples**:
+
+  ```ocaml
+  new_finals dfa_ex [0; 1; 2] = [[0; 1; 2]]
+  new_finals dfa_ex [0; 1] = []
+  ```
+
+### `nfa_to_dfa nfa`
+
+- **Type**: `('q, 's) nfa_t -> ('q list, 's) nfa_t`
+- **Description**: This function takes as input an NFA and converts it to an equivalent DFA. The language recognized by an NFA is invariant under `nfa_to_dfa`. In other words, for all NFAs `nfa` and for all strings `s`, `accept nfa s = accept (nfa_to_dfa nfa) s`.
+
+### Suggestion
+
+The `nfa_to_dfa` algorithm is pretty substantial. While you are free to design it in whatever manner you like (referring the [lecture slides][lecture notes] and [notes][subset construct] for assistance), we suggest you consider writing a helper function `nfa_to_dfa_step`. Efficiency matters here, if your code times out, it will fail the tests. Try to minimize the calls to `List` and `Set` (i.e. iterate less) to prevent this.
+
+#### `nfa_to_dfa_step nfa dfa wrk`
+
+- **Type**: `('q, 's) nfa_t -> ('q list, 's) nfa_t -> 'q list list -> ('q list, 's) nfa_t`
+- **Description**: First, let's take a look at what is being passed into the function for clarity:
+
+  *Parameters*
+  - `nfa`: the NFA to be converted into a DFA.
+  - `dfa`: the DFA to be created from the NFA. This will act as the accumulator in the function. Each time this function is called, the DFA should be updated based on the worklist.
