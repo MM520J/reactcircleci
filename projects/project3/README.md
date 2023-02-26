@@ -166,3 +166,43 @@ Here are the functions you must implement:
   ```
 
 - **Explanation**:
+  1. e_closure on `nfa_ex` from `0` returns `[0]` since there is no where to go from `0` on an epsilon transition.
+  2. e_closure on `nfa_ex` from `1` returns `[1;2]` since from `1` you can get to `2` on an epsilon transition.
+  3. e_closure on `nfa_ex` from `2` returns `[2]` since there is no where to go from `2` on an epsilon transition.
+  4. e_closure on `nfa_ex` from `0` and `1` returns `[0;1;2]` since from `0` you can only get to yourself and from `1` you can get to `2` on an epsilon transition but from `2` you can't go anywhere.
+
+#### `accept nfa s`
+
+- **Type**: `('q, char) nfa_t -> string -> bool`
+- **Description**: This function takes an NFA and a string, and returns whether the NFA accepts the string.
+- **Examples**:
+
+  ```ocaml
+  accept dfa_ex "" = false  (* dfa_ex is the NFA defined above *)
+  accept dfa_ex "ac" = true
+  accept dfa_ex "abc" = false
+  accept dfa_ex "abac" = true
+  ```
+
+- **Explanation**:
+  1. accept on `dfa_ex` with the string "" returns `false` because initially we are at our start state 0 and there are no characters to exhaust and we are not in a final state.
+  2. accept on `dfa_ex` with the string "ac" returns `true` because from 0 to 1 there is an 'a' transition and from 1 to 2 there is a 'c' transition and now that the string is empty and we are in a final state thus the nfa accepts "ac".
+  3. accept on `dfa_ex` with the string "abc" returns `false` because from 0 to 1 there is an 'a' transition but then to use the 'b' we go back from 1 to 0 and we are stuck because we need a 'c' transition yet there is only an 'a' transition. Since we are not in a final state thus the function returns false.
+  4. accept on `dfa_ex` with the string "abac" returns `true` because from 0 to 1 there is an 'a' transition but then to use the 'b' we go back from 1 to 0 and then we take an 'a' transition to go to state 1 again and then finally from 1 to 2 we exhaust our last character 'c' to make it to our final state. Since we are in a final state thus the nfa accepts "abac".
+
+## Part 2: DFAs
+
+In this part, our goal is to implement the `nfa_to_dfa` function. It uses the subset construction to convert an NFA to a DFA. For help with understanding Subset Construction you can look at the [lecture notes][lecture notes] and [here][subset construct]. We recommend you implement the `move` and `e_closure` parts of Part 1 before starting Part 2, since they are used in the subset construction.
+
+Remember that every DFA is also an NFA, but the reverse is not true. The subset construction converts an NFA to a DFA by grouping together multiple NFA states into a single DFA state. Hence, our DFA type is `('q list, 's) nfa_t`. Notice that our
+states are now sets of states from the NFA. The description will use "dfa state" to mean a set of states from corresponding NFA.
+
+To write `nfa_to_dfa` we will  write some helpers. These helpers follow the NFA to DFA conversion method discussed in lecture. We will test these functions individually in the public tests to help you track your progress and find bugs. Remember, you can always add more student tests in `test/student.ml`! 
+
+**Hint**: `new_states`, `new_trans`, and `new_finals` can all be implemented in one line!
+
+### `new_states nfa qs`
+
+- **Type**: `('q, 's) nfa_t -> 'q list -> 'q list list`
+- **Description**: Given an NFA and a DFA state computes all the DFA states that you can get to from a transition out of `qs` (including the dead state). Dead states are represented by empty lists. *Note: each element in the set corresponds to all of the states you can get to from one character of the alphabet (`sigma`) followed by any number of epsilon transitions*
+- **Examples**:
