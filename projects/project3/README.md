@@ -145,3 +145,24 @@ Here are the functions you must implement:
   ```
 
 - **Explanation**:
+  1. Move on `nfa_ex` from `0` with `Some a` returns `[1]` since from 0 to 1 there is a transition with character `a`.
+  2. Move on `nfa_ex` from `1` with `Some a` returns `[]` since from 1 there is no transition with character `a`.
+  3. Move on `nfa_ex` from `2` with `Some a` returns `[]` since from 2 there is no transition with character `a`.
+  4. Move on `nfa_ex` from `0` and `1` with `Some a` returns `[1]` since from 0 to 1 there is a transition with character `a` but from 1 there was no transition with character `a`.
+  5. Notice that the NFA uses an implicit dead state. If `s` is a state in the input list and there are no transitions from `s` on the input character, then all that happens is that no states are added to the output list for `s`.
+  6. Move on `nfa_ex` from `1` with `None` returns `[2]` since from 1 to 2 there is an epsilon transition.
+
+#### `e_closure nfa qs`
+
+- **Type**: `('q, 's) nfa_t -> 'q list -> 'q list`
+- **Description**: This function takes as input an NFA and a set of initial states. It outputs a set of states that the NFA might be in after making zero or more epsilon transitions, starting from the initial states. You can assume the intial states are valid (ie a subset of the nfa's states).
+- **Examples**:
+
+  ```ocaml
+  e_closure nfa_ex [0] = [0]
+  e_closure nfa_ex [1] = [1;2]
+  e_closure nfa_ex [2]  = [2]
+  e_closure nfa_ex [0;1] = [0;1;2]
+  ```
+
+- **Explanation**:
