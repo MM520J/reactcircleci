@@ -283,3 +283,31 @@ Here is the function you must implement:
 
 - **Type**: `regexp_t -> nfa_t`
 - **Description**: This function takes a regexp and returns an NFA that accepts the same language as the regular expression. Notice that as long as your NFA accepts the correct language, the structure of the NFA does not matter since the NFA produced will only be tested to see which strings it accepts. Remember, `Empty_String` represents the regular expression recognizing `epsilon`, as stated above.
+
+## Provided Functions
+
+The rest of these functions are implemented for you as helpers. Use them as you like; you don't have to modify them.
+
+### `explode s`
+
+- **Type**: `string -> char list`
+- **Description**: This function takes a string and converts it into a character list. The following function may be helpful when writing `accept` in Part 1.
+
+### `fresh`
+
+- **Type**: `unit -> int`
+- **Description**: This function takes in type `unit` as an argument (similar to Null). This function uses imperative OCaml to return an `int` value that has not been used before by using a reference to a counter. You might find this helpful for implementing  `regexp_to_nfa`.
+- **Examples**:
+
+  ```ocaml
+  fresh () = 1
+  fresh () = 2
+  fresh () = 3
+  ...
+  ```
+
+The following functions are useful for writing tests.
+
+### `string_to_nfa s`
+
+- **Type**: `string -> nfa`
