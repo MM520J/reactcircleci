@@ -250,3 +250,36 @@ The `nfa_to_dfa` algorithm is pretty substantial. While you are free to design i
   *Parameters*
   - `nfa`: the NFA to be converted into a DFA.
   - `dfa`: the DFA to be created from the NFA. This will act as the accumulator in the function. Each time this function is called, the DFA should be updated based on the worklist.
+  - `wrk`: a list of unvisited states.
+
+  Given an NFA, a partial DFA, and a worklist, this function will compute one step of the subset construction algorithm. This means that we take an unvisited DFA state from the worklist and add it to our DFA that we are creating (updating the list of all states, transitions, and final states appropriately). Our worklist is then updated for the next iteration by removing the newly processed state. You will want to use the previous three functions as helpers. They can be used to update the DFAs states, transistions, and final states.
+
+Skip implementing this function if you feel you have a better approach.
+
+## Part 3: Regular Expressions
+
+For the last part of the project, you will implement code to convert a regular expression to an NFA. (Then you could use your `NFA` module developed above to match particular strings.) The `Regexp` module represents a regular expression with the type `regexp_t`:
+
+```ocaml
+type regexp_t =
+  | Empty_String
+  | Char of char
+  | Union of regexp * regexp
+  | Concat of regexp * regexp
+  | Star of regexp
+```
+
+This datatype represents regular expressions as follows:
+
+- `Empty_String` represents the regular expression recognizing the empty string (not the empty set!). Written as a formal regular expression, this would be `epsilon`.
+- `Char c` represents the regular expression that accepts the single character c. Written as a formal regular expression, this would be `c`.
+- `Union (r1, r2)` represents the regular expression that is the union of r1 and r2. For example, `Union(Char 'a', Char'b')` is the same as the formal regular expression `a|b`.
+- `Concat (r1, r2)` represents the concatenation of r1 followed by r2. For example, `Concat(Char 'a', Char 'b')` is the same as the formal regular expresion `ab`.
+- `Star r` represents the Kleene closure of regular expression r. For example, `Star (Union (Char 'a', Char 'b'))` is the same as the formal regular expression `(a|b)*`.
+
+Here is the function you must implement:
+
+### `regexp_to_nfa regexp`
+
+- **Type**: `regexp_t -> nfa_t`
+- **Description**: This function takes a regexp and returns an NFA that accepts the same language as the regular expression. Notice that as long as your NFA accepts the correct language, the structure of the NFA does not matter since the NFA produced will only be tested to see which strings it accepts. Remember, `Empty_String` represents the regular expression recognizing `epsilon`, as stated above.
