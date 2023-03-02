@@ -311,3 +311,30 @@ The following functions are useful for writing tests.
 ### `string_to_nfa s`
 
 - **Type**: `string -> nfa`
+- **Description**: This function takes a string for a regular expression, parses the string, converts it into a regexp, and transforms it to an nfa, using your `regexp_to_nfa` function. As such, for this function to work, your `regexp_to_nfa` function must be working. In the starter files we have provided function `string_to_regexp` that parses strings into `regexp` values, described next.
+
+### `string_to_regexp s`
+
+- **Type**: `string -> regexp`
+- **Description**: This function takes a string for a regular expression, parses the string, and outputs its equivalent regexp. If the parser determines that the regular expression has illegal syntax, it will raise an IllegalExpression exception.
+- **Examples**:
+
+  ```ocaml
+  string_to_regexp "a" = Char 'a'
+  string_to_regexp "(a|b)" = Union (Char 'a', Char 'b')
+  string_to_regexp "ab" = Concat(Char 'a',Char 'b')
+  string_to_regexp "aab" = Concat(Char 'a',Concat(Char 'a',Char 'b'))
+  string_to_regexp "(a|E)*" = Star(Union(Char 'a',Empty_String))
+  string_to_regexp "(a|E)*(a|b)" = Concat(Star(Union(Char 'a',Empty_String)),Union(Char 'a',Char 'b'))
+  ```
+
+  In a call to `string_to_regexp s` the string `s` may contain only parentheses, |, \*, a-z (lowercase), and E (for epsilon). A grammatically ill-formed string will result in `IllegalExpression` being thrown. Note that the precedence for regular expression operators is as follows, from highest(1) to lowest(4):
+  
+  Precedence | Operator | Description
+  ---------- | -------- | -----------
+  1 | `()` | parentheses
+  2 | `*` | closure
+  3 |  | concatenation
+  4 | `|` | union
+  
+  Also, note that all the binary operators are **right associative**.
