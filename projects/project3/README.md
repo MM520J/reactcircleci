@@ -338,3 +338,12 @@ The following functions are useful for writing tests.
   4 | `|` | union
   
   Also, note that all the binary operators are **right associative**.
+
+[list doc]: https://caml.inria.fr/pub/docs/manual-ocaml/libref/List.html
+[string doc]: https://caml.inria.fr/pub/docs/manual-ocaml/libref/String.html
+[modules doc]: https://realworldocaml.org/v1/en/html/files-modules-and-programs.html
+[subset construct]: ./subset.pdf
+[lecture notes]: https://bakalian.cs.umd.edu/330/schedule
+[pervasives doc]: https://caml.inria.fr/pub/docs/manual-ocaml/libref/Stdlib.html
+[wikipedia inorder traversal]: https://en.wikipedia.org/wiki/Tree_traversal#In-order
+[sets]: ./SETS.md
