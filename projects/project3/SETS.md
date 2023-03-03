@@ -31,3 +31,38 @@ insert 3 (insert 3 (insert 2 [])) = [3; 2]
 ```ocaml
 insert_all [2; 3; 3] [] = [2; 3]
 insert_all [1; 2; 3] [4; 5; 6] = [1; 2; 3; 4; 5; 6]
+```
+
+## `subset a b`
+
+- Type: `'a list -> 'a list -> bool`
+- Description: Return true iff `a` **is a** subset of `b`. Formally, A ⊆ B ⇔ ∀x(xϵA ⇒ xϵB).
+- Examples:
+```ocaml
+subset (insert 2 (insert 4 [])) [] = false
+subset (insert 5 (insert 3 [])) (insert 3 (insert 5 (insert 2 []))) = true
+subset (insert 5 (insert 3 (insert 2 []))) (insert 5 (insert 3 [])) = false
+```
+
+## `eq a b`
+
+- Type: `'a list -> 'a list -> bool`
+- Description: Returns true iff `a` and `b` are equal as sets. Formally, A = B ⇔ ∀x(xϵA ⇔ xϵB). (Hint: The subset relation is anti-symmetric.)
+- Examples:
+```ocaml
+eq [] (insert 2 []) = false
+eq (insert 2 (insert 3 [])) (insert 3 []) = false
+eq (insert 3 (insert 2 [])) (insert 2 (insert 3 [])) = true
+```
+
+## `remove x a`
+
+- Type: `'a -> 'a list -> 'a list`
+- Description: Removes `x` from the set `a`.
+- Examples:
+```ocaml
+elem 3 (remove 3 (insert 2 (insert 3 []))) = false
+eq (remove 3 (insert 5 (insert 3 []))) (insert 5 []) = true
+```
+
+## `diff a b`
