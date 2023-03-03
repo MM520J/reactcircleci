@@ -66,3 +66,45 @@ eq (remove 3 (insert 5 (insert 3 []))) (insert 5 []) = true
 ```
 
 ## `diff a b`
+
+- Type: `'a list -> 'a list -> 'a list`
+- Description: Subtracts the set `b` from the set `a`.
+- Examples:
+```ocaml
+diff [1; 2; 3] [1; 2; 3] = []
+diff [1; 2; 3] [1; 4; 5] = [2; 3]
+diff [1; 2; 3] [4; 5; 6] = [1; 2; 3]
+```
+
+## `union a b`
+
+- Type: `'a list -> 'a list -> 'a list`
+- Description: Returns the union of the sets `a` and `b`. Formally, A ∪ B = {x | xϵA ∨ xϵB}.
+- Examples:
+```ocaml
+eq (union [] (insert 2 (insert 3 []))) (insert 3 (insert 2 [])) = true
+eq (union (insert 5 (insert 2 [])) (insert 2 (insert 3 []))) (insert 3 (insert 2 (insert 5 []))) = true
+eq (union (insert 2 (insert 7 [])) (insert 5 [])) (insert 5 (insert 7 (insert 2 []))) = true
+```
+
+## `intersection a b`
+
+- Type: `'a list -> 'a list -> 'a list`
+- Description: Returns the intersection of sets `a` and `b`. Formally, A ∩ B = {x | xϵA ∧ xϵB}.
+- Examples:
+```ocaml
+eq (intersection (insert 3 (insert 5 (insert 2 []))) []) [] = true
+eq (intersection (insert 5 (insert 7 (insert 3 (insert 2 [])))) (insert 6 (insert 4 []))) [] = true
+eq (intersection (insert 5 (insert 2 [])) (insert 4 (insert 3 (insert 5 [])))) (insert 5 []) = true
+```
+
+## `cat x a`
+
+- Type: `'a -> 'b list -> ('a * 'b) list`
+- Description: Turns each element of `a` into a 2-tuple where the first element is `x`.
+- Examples:
+```ocaml
+cat 1 [2; 3; 4] = [(1,2); (1,3); (1,4)]
+cat 3 [] = []
+cat "hi" [1; 2] = [("hi", 1); ("hi", 2)]
+```
